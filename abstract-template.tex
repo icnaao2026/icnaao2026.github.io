@@ -1,0 +1,71 @@
+% ICNAAO 2026 abstract template
+% Replace the sample title, author information, abstract, keywords, and references.
+% Move the "Presenting author" label to the author who will give the talk.
+% Compile twice with: pdflatex abstract-template.tex
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{empty}
+
+\title{Title of Your Contribution}
+% Define each distinct affiliation once with \thanks{...}.
+% Reuse its mark with \footnotemark[1] (or [2], etc., in order of \thanks).
+% For an author at a different institution, replace \footnotemark[1]
+% with \thanks{Other Department, Other University, City, Country.}.
+% Keep author-specific details outside the shared affiliation footnote.
+\author{%
+  First Author\thanks{Department of Mathematics, First University, City, Country.}\\
+  \small\href{mailto:first@example.com}{\texttt{first@example.com}}
+  \and Second Author\footnotemark[1]\\
+  \small Presenting author\\
+  \small\href{mailto:second@example.com}{\texttt{second@example.com}}
+  \and Third Author\thanks{Department of Mathematics, Second University, City, Country.}\\
+  \small\href{mailto:third@example.com}{\texttt{third@example.com}}
+}
+\date{}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\begin{abstract}
+Replace this text with a concise description of your research problem,
+methods, main results, and significance. 
+For example, consider the optimization problem
+\[
+    \min_{x \in C} f(x),
+\]
+where $C \subseteq \mathbb{R}^{n}$ is a nonempty closed convex set and
+$f\colon \mathbb{R}^{n} \to \mathbb{R}$ is continuously differentiable.
+Describe your assumptions, the proposed method, and the principal
+conclusions here. If needed, cite relevant literature using
+\cite{sample-article,sample-book}.
+\end{abstract}
+
+\noindent\textbf{Keywords:} First keyword; second keyword; third keyword.
+
+% Optional: uncomment and supply the relevant classification codes.
+% \medskip
+% \noindent\textbf{Mathematics Subject Classification:} Primary XXXXX; Secondary XXXXX.
+
+% Optional references: replace these illustrative placeholders with actual
+% sources, or remove this section and the sample citation if not needed.
+% Use \cite{key} in the abstract to refer to a matching \bibitem{key} below.
+\begin{thebibliography}{9}
+\bibitem{sample-article}
+A.~Author and B.~Author,
+Title of the article,
+\emph{Journal Name} \textbf{Volume} (Year), pages.
+
+\bibitem{sample-book}
+C.~Author,
+\emph{Title of the Book},
+Publisher, Year.
+\end{thebibliography}
+
+\end{document}
