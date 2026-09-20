@@ -1,10 +1,11 @@
 :root {
-    --primary-color: #1a365d;
-    --secondary-color: #2b6cb0;
-    --accent-color: #c53030;
-    --bg-light: #f7fafc;
+    --primary-color: #502b19;
+    --secondary-color: #8f4b2c;
+    --accent-color: #e99a53;
+    --bg-light: #faf5ef;
+    --highlight-color: #f7ecdd;
     --text-color: #2d3748;
-    --border-color: #e2e8f0;
+    --border-color: #ebcbab;
 }
 
 * {
@@ -18,6 +19,15 @@ body {
     color: var(--text-color);
     background-color: var(--bg-light);
     line-height: 1.6;
+}
+
+a {
+    color: var(--secondary-color);
+}
+
+a:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
 }
 
 header {
@@ -38,7 +48,7 @@ header p {
 }
 
 nav {
-    background-color: #2d3748;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -72,7 +82,7 @@ nav a:hover, nav a.active {
 h2 {
     color: var(--primary-color);
     margin-bottom: 1rem;
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--accent-color);
     padding-bottom: 0.5rem;
 }
 
@@ -116,8 +126,8 @@ footer {
 }
 
 .highlight-box {
-    background-color: #ebf8ff;
-    border-left: 4px solid var(--secondary-color);
+    background-color: var(--highlight-color);
+    border-left: 4px solid var(--accent-color);
     padding: 1rem;
     margin: 1rem 0;
 }
@@ -131,28 +141,34 @@ footer {
 }
 
 .announcements {
-    background: linear-gradient(135deg, #fff7d6, #ffedd5);
-    border: 2px solid #f59e0b;
-    border-left: 6px solid #c2410c;
+    background: var(--highlight-color);
+    border: 2px solid var(--accent-color);
+    border-left: 6px solid var(--secondary-color);
     border-radius: 8px;
     padding: 1.5rem;
     margin-bottom: 2rem;
 }
 
 .announcements h2 {
-    color: #9a3412;
-    border-bottom-color: #f59e0b;
+    color: var(--primary-color);
+    border-bottom-color: var(--accent-color);
+}
+
+.announcement-item + .announcement-item {
+    border-top: 1px solid var(--border-color);
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
 }
 
 .announcement-message {
-    color: #9a3412;
+    color: var(--secondary-color);
     font-size: 1.4rem;
     font-weight: 700;
 }
 
 .announcement-link {
     display: inline-block;
-    background-color: #9a3412;
+    background-color: var(--secondary-color);
     color: white;
     padding: 0.75rem 1rem;
     border-radius: 6px;
@@ -167,7 +183,7 @@ footer {
 }
 
 .announcement-link:hover {
-    background-color: #7c2d12;
+    background-color: var(--primary-color);
     text-decoration: underline;
 }
 
