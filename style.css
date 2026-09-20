@@ -176,6 +176,12 @@ footer {
     text-decoration: none;
 }
 
+.submission-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
 .announcement-link span {
     display: block;
     font-size: 0.8rem;
