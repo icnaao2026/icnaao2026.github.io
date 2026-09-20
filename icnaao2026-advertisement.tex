@@ -1,0 +1,123 @@
+% !TeX program = pdflatex
+% Compile with: latexmk -pdf icnaao2026-advertisement.tex
+% Original dark orange palette, with subtly reduced saturation.
+% No external images or fonts required.
+\documentclass[aspectratio=169,10pt]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{tikz}
+
+\definecolor{DeepOrange}{HTML}{502B19}
+\definecolor{BurntOrange}{HTML}{8F4B2C}
+\definecolor{BrightOrange}{HTML}{E99A53}
+\definecolor{WarmWhite}{HTML}{F7ECDD}
+\definecolor{SoftOrange}{HTML}{EBCBAB}
+\setbeamercolor{background canvas}{bg=DeepOrange}
+\setbeamercolor{normal text}{fg=WarmWhite}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{}
+\hypersetup{pdftitle={ICNAAO 2026 -- Conference invitation},
+  pdfauthor={Department of Mathematics, KMUTT},colorlinks=true,urlcolor=WarmWhite}
+
+\newcommand{\dateline}[3]{%
+  \node[anchor=north west,text=SoftOrange,font=\fontsize{8.5}{11}\selectfont]
+    at (0.80,#1) {#2};
+  \node[anchor=north east,text=WarmWhite,font=\bfseries\fontsize{9}{11}\selectfont]
+    at (8.05,#1) {#3};}
+
+\hyphenpenalty=10000
+\begin{document}
+\begin{frame}[plain]
+\begin{tikzpicture}[remember picture,overlay]
+  \begin{scope}[shift={(current page.south west)}]
+    % The 16:9 Beamer canvas is 16 cm by 9 cm.
+    \fill[BurntOrange] (11.8,9) -- (16,9) -- (16,4.8) -- cycle;
+    \fill[BrightOrange] (15.55,9) rectangle (16,0);
+    \fill[BrightOrange] (0.65,8.30) rectangle (1.28,8.39);
+    \node[anchor=west,text=SoftOrange,font=\bfseries\small]
+      at (1.48,8.34) {BANGKOK, THAILAND\quad /\quad 14--16 DECEMBER 2026};
+
+    \node[anchor=north west,text=BrightOrange,font=\bfseries\fontsize{32}{35}\selectfont]
+      at (0.65,7.95) {ICNAAO 2026};
+    \node[anchor=north west,text=WarmWhite,text width=14cm,
+      font=\bfseries\fontsize{17}{19}\selectfont,align=left]
+      at (0.65,6.95) {6th International Conference on\\
+        Nonlinear Applied Analysis and Optimization};
+    \node[anchor=north west,text=SoftOrange,font=\fontsize{11}{14}\selectfont]
+      at (0.65,5.67) {You are warmly invited to ICNAAO 2026 at KMUTT, Bangkok.};
+
+    \fill[BurntOrange] (0.65,2.02) rectangle (8.30,5.13);
+    \node[anchor=north west,text=WarmWhite,font=\bfseries\fontsize{13}{16}\selectfont]
+      at (0.80,4.95) {IMPORTANT DATES};
+    \dateline{4.35}{Abstract submission opens}{September 20, 2026}
+    \dateline{3.92}{Abstract submission closes}{November 10, 2026}
+    \dateline{3.49}{Notification of acceptance}{November 15, 2026}
+    \dateline{3.06}{Early bird registration closes}{November 20, 2026}
+    \dateline{2.53}{Conference dates}{December 14--16, 2026}
+
+    \node[anchor=north west,text=BrightOrange,font=\bfseries\fontsize{12}{14}\selectfont]
+      at (8.80,5.00) {ORGANIZER \& VENUE};
+    \node[anchor=north west,text=WarmWhite,text width=5.8cm,
+      font=\fontsize{9}{10}\selectfont,align=left]
+      at (8.80,4.52) {\textbf{Department of Mathematics}\\
+      King Mongkut's University of\\
+      Technology Thonburi (KMUTT)\\
+      Bangkok, Thailand};
+    \node[anchor=north west,text=BrightOrange,font=\bfseries\fontsize{12}{14}\selectfont]
+      at (8.80,2.98) {CONTACT};
+    \node[anchor=north west,text=WarmWhite,text width=5.8cm,
+      font=\fontsize{9}{10}\selectfont,align=left]
+      at (8.80,2.52) {Parin Chaipunya\\
+      \href{mailto:parin.cha@kmutt.ac.th}{parin.cha@kmutt.ac.th}};
+
+    \draw[BrightOrange,line width=0.7pt] (0.65,1.63) -- (14.90,1.63);
+    \node[anchor=base west,text=WarmWhite,font=\bfseries\fontsize{12}{15}\selectfont]
+      at (0.65,0.92) {\href{https://forms.gle/tLStvoWkgqm4HonY7}{Register \& submit your abstract}\enspace $\longrightarrow$};
+    \node[anchor=base west,text=SoftOrange,font=\fontsize{11}{15}\selectfont]
+      at (8.65,0.92) {\href{https://icnaao2026.github.io/}{icnaao2026.github.io}};
+  \end{scope}
+\end{tikzpicture}
+\end{frame}
+
+% Complete topic list from call-for-papers.html.
+\begin{frame}[plain]
+\begin{tikzpicture}[remember picture,overlay]
+  \begin{scope}[shift={(current page.south west)}]
+    \fill[BurntOrange] (11.8,9) -- (16,9) -- (16,4.8) -- cycle;
+    \fill[BrightOrange] (15.55,9) rectangle (16,0);
+    \node[anchor=north west,text=SoftOrange,font=\bfseries\fontsize{11}{13}\selectfont]
+      at (0.65,8.45) {ICNAAO 2026\quad /\quad CALL FOR PAPERS};
+    \node[anchor=north west,text=BrightOrange,font=\bfseries\fontsize{25}{29}\selectfont]
+      at (0.65,7.82) {Scope and Topics};
+    \node[anchor=north west,text=WarmWhite,font=\fontsize{10}{12}\selectfont]
+      at (0.65,6.80) {Original research is invited in the following areas, including but not limited to:};
+    \draw[BrightOrange,line width=0.7pt] (7.92,6.16) -- (7.92,1.70);
+    \node[anchor=north west,text=WarmWhite,text width=6.9cm,
+      align=left,font=\fontsize{9}{10}\selectfont]
+      at (0.65,6.18) {%
+      {\color{BrightOrange}\textbf{01}}\enspace Nonlinear Functional Analysis\\[6pt]
+      {\color{BrightOrange}\textbf{02}}\enspace Fixed Point Theory\\[6pt]
+      {\color{BrightOrange}\textbf{03}}\enspace Differential Equations and Dynamical Systems\\[6pt]
+      {\color{BrightOrange}\textbf{04}}\enspace Convex and Non-Convex Optimization\\[6pt]
+      {\color{BrightOrange}\textbf{05}}\enspace Stochastic Optimization and Uncertainty Quantification\\[6pt]
+      {\color{BrightOrange}\textbf{06}}\enspace Numerical Optimization and Algorithms\\[6pt]
+      {\color{BrightOrange}\textbf{07}}\enspace Integer and Combinatorial Linear Programming};
+    \node[anchor=north west,text=WarmWhite,text width=6.5cm,
+      align=left,font=\fontsize{9}{10}\selectfont]
+      at (8.30,6.18) {%
+      {\color{BrightOrange}\textbf{08}}\enspace Variational Inequalities, Complementarity Problems and Equilibrium Problems\\[6pt]
+      {\color{BrightOrange}\textbf{09}}\enspace Game Theory and Nash Equilibrium Problems\\[6pt]
+      {\color{BrightOrange}\textbf{10}}\enspace Decision Science and Fuzzy Logic\\[6pt]
+      {\color{BrightOrange}\textbf{11}}\enspace Computational Science, Machine Learning and Artificial Intelligence\\[6pt]
+      {\color{BrightOrange}\textbf{12}}\enspace Applications in Operations Research, Economics, and Engineering Systems\\[6pt]
+      {\color{BrightOrange}\textbf{13}}\enspace Miscellaneous Topics in Mathematics};
+    \draw[BrightOrange,line width=0.7pt] (0.65,1.40) -- (14.90,1.40);
+    \node[anchor=north west,text=WarmWhite,font=\bfseries\fontsize{11}{13}\selectfont]
+      at (0.65,1.13) {Abstract submission closes November 10, 2026};
+    \node[anchor=north west,text=SoftOrange,font=\fontsize{9}{11}\selectfont]
+      at (0.65,0.62) {\href{https://icnaao2026.github.io/}{icnaao2026.github.io}
+      \quad /\quad \href{mailto:parin.cha@kmutt.ac.th}{parin.cha@kmutt.ac.th}};
+  \end{scope}
+\end{tikzpicture}
+\end{frame}
+\end{document}
