@@ -1,7 +1,7 @@
 % !TeX program = pdflatex
 % Compile with: latexmk -pdf icnaao2026-advertisement.tex
 % Original dark orange palette, with subtly reduced saturation.
-% No external images or fonts required.
+% Requires assets/kmutt-logos-transparent.png; no external fonts required.
 \documentclass[aspectratio=169,10pt]{beamer}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -16,6 +16,12 @@
 \setbeamercolor{normal text}{fg=WarmWhite}
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{footline}{}
+\newcommand{\flyerlogos}{%
+  \node[anchor=north east,inner sep=0pt]
+    at (15.10,8.65) {\includegraphics[width=3.20cm]{assets/kmutt-logos-transparent.png}};}
+\newcommand{\flyerpagenumber}{%
+  \node[anchor=base east,text=SoftOrange,font=\fontsize{8}{10}\selectfont]
+    at (14.90,0.35) {\insertframenumber/\inserttotalframenumber};}
 \hypersetup{pdftitle={ICNAAO 2026 -- Conference invitation},
   pdfauthor={Department of Mathematics, KMUTT},colorlinks=true,urlcolor=WarmWhite}
 
@@ -33,6 +39,7 @@
     % The 16:9 Beamer canvas is 16 cm by 9 cm.
     \fill[BurntOrange] (11.8,9) -- (16,9) -- (16,4.8) -- cycle;
     \fill[BrightOrange] (15.55,9) rectangle (16,0);
+    \flyerlogos
     \fill[BrightOrange] (0.65,8.30) rectangle (1.28,8.39);
     \node[anchor=west,text=SoftOrange,font=\bfseries\small]
       at (1.48,8.34) {BANGKOK, THAILAND\quad /\quad 14--16 DECEMBER 2026};
@@ -46,6 +53,8 @@
     \node[anchor=north west,text=SoftOrange,font=\fontsize{11}{14}\selectfont]
       at (0.65,5.67) {You are warmly invited to ICNAAO 2026 at KMUTT, Bangkok.};
 
+    \begin{scope}[yshift=-0.15cm]
+    \begin{scope}[yshift=-0.25cm]
     \fill[BurntOrange] (0.65,2.02) rectangle (8.30,5.13);
     \node[anchor=north west,text=WarmWhite,font=\bfseries\fontsize{13}{16}\selectfont]
       at (0.80,4.95) {IMPORTANT DATES};
@@ -54,6 +63,7 @@
     \dateline{3.49}{Notification of acceptance}{November 15, 2026}
     \dateline{3.06}{Early bird registration closes}{November 20, 2026}
     \dateline{2.53}{Conference dates}{December 14--16, 2026}
+    \end{scope}
 
     \node[anchor=north west,text=BrightOrange,font=\bfseries\fontsize{12}{14}\selectfont]
       at (8.80,5.00) {ORGANIZER \& VENUE};
@@ -69,12 +79,14 @@
       font=\fontsize{9}{10}\selectfont,align=left]
       at (8.80,2.52) {Parin Chaipunya\\
       \href{mailto:parin.cha@kmutt.ac.th}{parin.cha@kmutt.ac.th}};
+    \end{scope}
 
-    \draw[BrightOrange,line width=0.7pt] (0.65,1.63) -- (14.90,1.63);
+    \draw[BrightOrange,line width=0.7pt] (0.65,1.20) -- (14.90,1.20);
     \node[anchor=base west,text=WarmWhite,font=\bfseries\fontsize{12}{15}\selectfont]
-      at (0.65,0.92) {\href{https://forms.gle/tLStvoWkgqm4HonY7}{Register \& submit your abstract}\enspace $\longrightarrow$};
+      at (0.65,0.45) {\href{https://forms.gle/tLStvoWkgqm4HonY7}{Register \& submit your abstract}\enspace $\longrightarrow$};
     \node[anchor=base west,text=SoftOrange,font=\fontsize{11}{15}\selectfont]
-      at (8.65,0.92) {\href{https://icnaao2026.github.io/}{icnaao2026.github.io}};
+      at (8.65,0.45) {\href{https://icnaao2026.github.io/}{icnaao2026.github.io}};
+    \flyerpagenumber
   \end{scope}
 \end{tikzpicture}
 \end{frame}
@@ -85,6 +97,7 @@
   \begin{scope}[shift={(current page.south west)}]
     \fill[BurntOrange] (11.8,9) -- (16,9) -- (16,4.8) -- cycle;
     \fill[BrightOrange] (15.55,9) rectangle (16,0);
+    \flyerlogos
     \node[anchor=north west,text=SoftOrange,font=\bfseries\fontsize{11}{13}\selectfont]
       at (0.65,8.45) {ICNAAO 2026\quad /\quad CALL FOR PAPERS};
     \node[anchor=north west,text=BrightOrange,font=\bfseries\fontsize{25}{29}\selectfont]
@@ -117,6 +130,7 @@
     \node[anchor=north west,text=SoftOrange,font=\fontsize{9}{11}\selectfont]
       at (0.65,0.62) {\href{https://icnaao2026.github.io/}{icnaao2026.github.io}
       \quad /\quad \href{mailto:parin.cha@kmutt.ac.th}{parin.cha@kmutt.ac.th}};
+    \flyerpagenumber
   \end{scope}
 \end{tikzpicture}
 \end{frame}
