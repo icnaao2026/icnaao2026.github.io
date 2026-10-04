@@ -118,11 +118,65 @@ th {
 
 footer {
     text-align: center;
-    padding: 1.5rem;
+    padding: 0 1rem 1.5rem;
     background-color: var(--primary-color);
     color: white;
     margin-top: 3rem;
     font-size: 0.9rem;
+}
+
+.header-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: clamp(0.75rem, 3vw, 2rem);
+    margin: 0.75rem -1rem -2rem;
+    padding: 0.25rem 1rem;
+    background: white;
+}
+
+.header-logos img {
+    display: block;
+    object-fit: contain;
+}
+
+.header-logos img.logo-kmutt {
+    width: 195px;
+    height: 65px;
+}
+
+.header-logos img.logo-rise50 {
+    width: 60px;
+    height: 55px;
+}
+
+.header-logos img.logo-erasmus {
+    width: 160px;
+    height: 66px;
+}
+
+@media (max-width: 600px) {
+    .header-logos {
+        gap: 0.5rem;
+        margin-top: 1rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .header-logos img.logo-kmutt {
+        width: min(40vw, 130px);
+        height: 43px;
+    }
+
+    .header-logos img.logo-rise50 {
+        width: 38px;
+        height: 35px;
+    }
+
+    .header-logos img.logo-erasmus {
+        width: min(40vw, 116px);
+        height: 48px;
+    }
 }
 
 .highlight-box {
