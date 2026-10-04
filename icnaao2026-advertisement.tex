@@ -260,4 +260,64 @@ Faculty members, research staff, and students of the Department of Mathematics, 
   \end{scope}
 \end{tikzpicture}
 \end{frame}
+
+% Registration fees from registration.html.
+\begin{frame}[plain]
+\begin{tikzpicture}[remember picture,overlay]
+  \begin{scope}[shift={(current page.south west)}]
+    \fill[BurntOrange] (11.8,9) -- (16,9) -- (16,4.8) -- cycle;
+    \fill[BrightOrange] (15.55,9) rectangle (16,0);
+    \flyerlogos
+    \node[anchor=north west,text=SoftOrange,font=\bfseries\fontsize{11}{13}\selectfont]
+      at (0.65,8.45) {ICNAAO 2026\quad /\quad REGISTRATION};
+    \node[anchor=north west,text=BrightOrange,font=\bfseries\fontsize{25}{29}\selectfont]
+      at (0.65,7.82) {Registration Fees};
+    \node[anchor=north west,text=WarmWhite,font=\fontsize{10}{12}\selectfont]
+      at (0.65,6.95) {Early bird rates apply through November 20, 2026.};
+
+    \fill[BurntOrange] (0.65,2.00) rectangle (7.35,6.35);
+    \node[anchor=north west,text=BrightOrange,font=\bfseries\fontsize{12}{15}\selectfont]
+      at (0.95,5.98) {INTERNATIONAL FEES};
+    \node[anchor=north west,text=WarmWhite,font=\bfseries\fontsize{10}{12}\selectfont]
+      at (0.95,5.30) {General};
+    \node[anchor=north west,text=WarmWhite,font=\fontsize{9}{12}\selectfont]
+      at (0.95,4.93) {Early bird: USD 200\quad /\quad Regular: USD 250};
+    \node[anchor=north west,text=WarmWhite,font=\bfseries\fontsize{10}{12}\selectfont]
+      at (0.95,4.30) {Student};
+    \node[anchor=north west,text=WarmWhite,font=\fontsize{9}{12}\selectfont]
+      at (0.95,3.93) {Early bird: USD 150\quad /\quad Regular: USD 180};
+    \node[anchor=north west,text=WarmWhite,font=\bfseries\fontsize{10}{12}\selectfont]
+      at (0.95,3.30) {Accompanying person};
+    \node[anchor=north west,text=WarmWhite,font=\fontsize{9}{12}\selectfont]
+      at (0.95,2.93) {USD 100};
+
+    \fill[BurntOrange] (7.75,2.00) rectangle (14.90,6.35);
+    \node[anchor=north west,text=BrightOrange,font=\bfseries\fontsize{12}{15}\selectfont]
+      at (8.05,5.98) {THAI FEES};
+    \node[anchor=north west,text=WarmWhite,font=\bfseries\fontsize{10}{12}\selectfont]
+      at (8.05,5.30) {General};
+    \node[anchor=north west,text=WarmWhite,font=\fontsize{9}{12}\selectfont]
+      at (8.05,4.93) {Early bird: THB 6,000\quad /\quad Regular: THB 7,500};
+    \node[anchor=north west,text=WarmWhite,font=\bfseries\fontsize{10}{12}\selectfont]
+      at (8.05,4.30) {Student};
+    \node[anchor=north west,text=WarmWhite,font=\fontsize{9}{12}\selectfont]
+      at (8.05,3.93) {Early bird: THB 4,500\quad /\quad Regular: THB 5,500};
+    \node[anchor=north west,text=WarmWhite,font=\bfseries\fontsize{10}{12}\selectfont]
+      at (8.05,3.30) {Accompanying person};
+    \node[anchor=north west,text=WarmWhite,font=\fontsize{9}{12}\selectfont]
+      at (8.05,2.93) {THB 3,000};
+
+    \node[anchor=north west,text=SoftOrange,font=\fontsize{9}{11}\selectfont]
+      at (0.75,1.80) {Registration includes all sessions, conference kit, coffee breaks, lunches, and banquet.};
+    \draw[BrightOrange,line width=0.7pt] (0.65,1.20) -- (14.90,1.20);
+    \node[anchor=base west,text=WarmWhite,font=\bfseries\fontsize{11}{14}\selectfont]
+      at (0.65,0.45) {Register:};
+    \node[anchor=base west,text=SoftOrange,font=\fontsize{9}{12}\selectfont]
+      at (2.45,0.45) {\href{https://forms.gle/tLStvoWkgqm4HonY7}{forms.gle/tLStvoWkgqm4HonY7}};
+    \node[anchor=base west,text=SoftOrange,font=\fontsize{10}{13}\selectfont]
+      at (9.10,0.45) {\href{https://icnaao2026.github.io/}{icnaao2026.github.io}};
+    \flyerpagenumber
+  \end{scope}
+\end{tikzpicture}
+\end{frame}
 \end{document}

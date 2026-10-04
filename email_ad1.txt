@@ -1,0 +1,28 @@
+Subject: You’re invited to ICNAAO 2026 in Bangkok!
+
+Dear Colleague,
+
+I’m delighted to announce that we are organizing the 6th International Conference on Nonlinear Applied Analysis and Optimization (ICNAAO 2026), and I warmly invite you to join us. The conference will take place December 14–16, 2026, at King Mongkut’s University of Technology Thonburi (KMUTT) in Bangkok, Thailand.
+
+ICNAAO is a friendly place to share your work, hear fresh perspectives, and connect with colleagues from around the world. We are co-organizing the conference with our colleagues in India from the Nonlinear Analysis and Optimization (NAO) Wing of the Calcutta Mathematical Society (CMS), Kolkata.
+
+We’d love to hear about your research. Suggested topics includes, but not limited to, nonlinear functional analysis, fixed point theory, differential equations, optimization, variational inequalities, game theory, computational science, machine learning, and applications in operations research, economics, and engineering.
+
+Important dates:
+• Abstract submission deadline: November 10, 2026
+• Acceptance notifications: November 15, 2026
+• Early bird registration deadline: November 20, 2026
+• Conference: December 14–16, 2026
+
+You can submit your abstract and register here:
+https://forms.gle/tLStvoWkgqm4HonY7
+
+Conference details: https://icnaao2026.github.io/
+
+I hope you’ll join us in Bangkok. We look forward to seeing you there!
+
+Warm regards,
+Parin Chaipunya
+Conference Chair, ICNAAO 2026
+On behalf of the Department of Mathematics, KMUTT, and the Organizing Committee
+parin.cha@kmutt.ac.th
