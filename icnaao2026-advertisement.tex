@@ -103,6 +103,43 @@
 \end{tikzpicture}
 \end{frame}
 
+% Special issues.
+\begin{frame}[plain]
+\begin{tikzpicture}[remember picture,overlay]
+  \begin{scope}[shift={(current page.south west)}]
+    \fill[BurntOrange] (11.8,9) -- (16,9) -- (16,4.8) -- cycle;
+    \fill[BrightOrange] (15.55,9) rectangle (16,0);
+    \flyerlogos
+    \node[anchor=north west,text=SoftOrange,font=\bfseries\fontsize{11}{13}\selectfont]
+      at (0.65,8.45) {ICNAAO 2026\quad /\quad PUBLICATION OPPORTUNITIES};
+    \node[anchor=north west,text=BrightOrange,font=\bfseries\fontsize{25}{29}\selectfont]
+      at (0.65,7.82) {Special Issues};
+    \node[anchor=north west,text=WarmWhite,text width=12.8cm,
+      align=left,font=\fontsize{12}{16}\selectfont]
+      at (0.65,6.65) {Conference contributions may be considered for special issues in these Scopus Q1 journals:};
+
+    \fill[BurntOrange,rounded corners=2pt] (0.65,3.85) rectangle (14.85,5.70);
+    \node[anchor=north west,text=BrightOrange,font=\bfseries\fontsize{16}{20}\selectfont]
+      at (0.95,5.25) {Optimization};
+    \node[anchor=north west,text=WarmWhite,font=\fontsize{12}{16}\selectfont]
+      at (0.95,4.65) {Taylor \& Francis\quad /\quad Scopus Q1};
+
+    \fill[BurntOrange,rounded corners=2pt] (0.65,1.65) rectangle (14.85,3.45);
+    \node[anchor=north west,text=BrightOrange,text width=13.5cm,
+      font=\bfseries\fontsize{15}{19}\selectfont]
+      at (0.95,3.12) {Bangmod International Journal of Mathematical and Computational Science};
+    \node[anchor=north west,text=WarmWhite,font=\fontsize{12}{16}\selectfont]
+      at (0.95,2.18) {TaCS-CoE, KMUTT\quad /\quad Scopus Q1};
+
+    \draw[BrightOrange,line width=0.7pt] (0.65,1.40) -- (14.90,1.40);
+    \node[anchor=north west,text=SoftOrange,font=\fontsize{9}{11}\selectfont]
+      at (0.65,0.62) {\href{https://icnaao2026.github.io/}{icnaao2026.github.io}
+      \quad /\quad \href{mailto:parin.cha@kmutt.ac.th}{parin.cha@kmutt.ac.th}};
+    \flyerpagenumber
+  \end{scope}
+\end{tikzpicture}
+\end{frame}
+
 % Complete topic list from call-for-papers.html.
 \begin{frame}[plain]
 \begin{tikzpicture}[remember picture,overlay]
