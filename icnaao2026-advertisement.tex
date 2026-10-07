@@ -114,24 +114,31 @@
       at (0.65,8.45) {ICNAAO 2026\quad /\quad PUBLICATION OPPORTUNITIES};
     \node[anchor=north west,text=BrightOrange,font=\bfseries\fontsize{25}{29}\selectfont]
       at (0.65,7.82) {Special Issues};
-    \node[anchor=north west,text=WarmWhite,text width=12.8cm,
-      align=left,font=\fontsize{12}{16}\selectfont]
+    \node[anchor=north west,inner sep=0pt,text=WarmWhite,text width=14.2cm,
+      align=left,font=\fontsize{11}{14}\selectfont] (issues-intro)
       at (0.65,6.65) {Conference contributions may be considered for special issues in these Scopus Q1 journals:};
 
-    \fill[BurntOrange,rounded corners=2pt] (0.65,3.95) rectangle (14.85,5.75);
-    \node[anchor=north west,text=BrightOrange,font=\bfseries\fontsize{16}{20}\selectfont]
-      at (0.95,5.30) {Optimization};
-    \node[anchor=north west,text=WarmWhite,font=\fontsize{12}{16}\selectfont]
-      at (0.95,4.70) {Taylor \& Francis\quad /\quad Scopus Q1};
+    % Each background is sized by its contents. Subsequent cards are positioned
+    % from the previous node's bottom edge, so wrapped text cannot overlap.
+    \node[anchor=north west,fill=BurntOrange,rounded corners=3pt,
+      inner sep=0.25cm,text width=13.7cm,text=WarmWhite,align=left,
+      font=\fontsize{10}{13}\selectfont] (journal-one)
+      at ([yshift=-0.30cm]issues-intro.south west) {%
+      {\color{BrightOrange}\bfseries\fontsize{14}{17}\selectfont Optimization\par}
+      \vspace{4pt}
+      Taylor \& Francis\quad /\quad Scopus Q1\par};
 
-    \fill[BurntOrange,rounded corners=2pt] (0.65,1.45) rectangle (14.85,3.70);
-    \node[anchor=north west,text=BrightOrange,text width=13.5cm,
-      font=\bfseries\fontsize{13}{16}\selectfont]
-      at (0.95,3.38) {Bangmod International Journal of Mathematical and\\Computational Science};
-    \node[anchor=north west,text=WarmWhite,font=\fontsize{12}{16}\selectfont]
-      at (0.95,2.20) {TaCS-CoE, KMUTT\quad /\quad Scopus Q1};
+    \node[anchor=north west,fill=BurntOrange,rounded corners=3pt,
+      inner sep=0.25cm,text width=13.7cm,text=WarmWhite,align=left,
+      font=\fontsize{10}{13}\selectfont] (journal-two)
+      at ([yshift=-0.30cm]journal-one.south west) {%
+      {\color{BrightOrange}\bfseries\fontsize{12}{15}\selectfont
+      Bangmod International Journal of\\
+      Mathematical and Computational Science\par}
+      \vspace{4pt}
+      TaCS-CoE, KMUTT\quad /\quad Scopus Q1\par};
 
-    \draw[BrightOrange,line width=0.7pt] (0.65,1.25) -- (14.90,1.25);
+    \draw[BrightOrange,line width=0.7pt] (0.65,1.30) -- (14.90,1.30);
     \node[anchor=north west,text=SoftOrange,font=\fontsize{9}{11}\selectfont]
       at (0.65,0.62) {\href{https://icnaao2026.github.io/}{icnaao2026.github.io}
       \quad /\quad \href{mailto:parin.cha@kmutt.ac.th}{parin.cha@kmutt.ac.th}};
