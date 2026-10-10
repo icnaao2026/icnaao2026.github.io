@@ -8,6 +8,11 @@ ICNAAO is a friendly place to share your work, hear fresh perspectives, and conn
 
 We’d love to hear about your research. Suggested topics includes, but not limited to, nonlinear functional analysis, fixed point theory, differential equations, optimization, variational inequalities, game theory, computational science, machine learning, and applications in operations research, economics, and engineering.
 
+Special issues:
+Accepted conference contributions will have the opportunity to be considered for special issues in the following Scopus Q1 journals:
+• Optimization (Taylor & Francis)
+• Bangmod International Journal of Mathematical and Computational Science (TaCS-CoE, KMUTT)
+
 Important dates:
 • Abstract submission deadline: November 10, 2026
 • Acceptance notifications: November 15, 2026
@@ -18,6 +23,9 @@ You can submit your abstract and register here:
 https://forms.gle/tLStvoWkgqm4HonY7
 
 Conference details: https://icnaao2026.github.io/
+
+Download the conference flyer (PDF):
+https://icnaao2026.github.io/icnaao2026-advertisement.pdf
 
 I hope you’ll join us in Bangkok. We look forward to seeing you there!
 
