@@ -1,3 +1,27 @@
 # LaTeX auxiliary files and build output
 /aux/
 /out/
+
+# Letter sources and logos are tracked; generated files stay local.
+/letters/**/aux/
+/letters/**/out/
+/letters/**/*.pdf
+/letters/**/*.aux
+/letters/**/*.log
+/letters/**/*.out
+/letters/**/*.fls
+/letters/**/*.fdb_latexmk
+/letters/**/*.synctex.gz
+/letters/**/*.synctex(busy)
+/letters/**/*.toc
+/letters/**/*.lof
+/letters/**/*.lot
+/letters/**/*.bbl
+/letters/**/*.blg
+/letters/**/*.bcf
+/letters/**/*.run.xml
+/letters/**/*.xdv
+/letters/**/*.dvi
+
+# Keep the personal signature out of Git.
+/letters/**/signature.*
