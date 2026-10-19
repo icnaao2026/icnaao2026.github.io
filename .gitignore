@@ -25,3 +25,18 @@
 
 # Keep the personal signature out of Git.
 /letters/**/signature.*
+
+# Registration spreadsheets (including reg.ods) contain personal information.
+/reg.ods
+/regis/**/*.ods
+/regis/.~lock.*#
+
+# All generated acceptance PDFs, email previews, and delivery logs.
+/acceptance_letters/
+/regis/__pycache__/
+
+# Google OAuth credentials and local Python environment.
+/regis/**/*credentials*.json
+/regis/**/*token*.json
+/regis/**/client_secret*.json
+/regis/.venv/
