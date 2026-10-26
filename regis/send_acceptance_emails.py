@@ -39,7 +39,7 @@ class GmailAPIRejected(ValueError):
 def load_oauth_service(credentials_file, token_file, sender):
     """Authorize sending and verify the signed-in account matches --sender."""
     try:
-        from google.auth.exceptions import GoogleAuthError
+        from google.auth.exceptions import GoogleAuthError, RefreshError
         from google.auth.transport.requests import AuthorizedSession, Request
         from google.oauth2.credentials import Credentials
         from google_auth_oauthlib.flow import InstalledAppFlow
@@ -58,13 +58,25 @@ def load_oauth_service(credentials_file, token_file, sender):
     try:
         if not credentials or not credentials.valid:
             if credentials and credentials.expired and credentials.refresh_token:
-                credentials.refresh(Request())
-            else:
+                try:
+                    credentials.refresh(Request())
+                except RefreshError as exc:
+                    # A revoked/expired refresh token requires new consent.
+                    # Do not restart sign-in for transient or client-config errors.
+                    details = next((part for part in exc.args if isinstance(part, dict)), {})
+                    code = details.get("error")
+                    if code != "invalid_grant" and not str(exc).startswith("invalid_grant:"):
+                        raise
+                    print("Cached Google authorization has expired or been revoked. "
+                          "Opening browser sign-in; select " + sender + ".")
+                    credentials = None
+            if not credentials or not credentials.valid:
                 if not credentials_file.is_file():
                     raise ValueError(f"Missing OAuth desktop credentials: {credentials_file}. "
                                      "See regis/README.md for the Google Cloud setup.")
                 flow = InstalledAppFlow.from_client_secrets_file(str(credentials_file), OAUTH_SCOPES)
-                credentials = flow.run_local_server(port=0, login_hint=sender, prompt="select_account")
+                credentials = flow.run_local_server(port=0, login_hint=sender,
+                                                    prompt="consent select_account", access_type="offline")
         with AuthorizedSession(credentials) as session:
             response = session.get("https://openidconnect.googleapis.com/v1/userinfo", timeout=30)
             if response.status_code != 200:
@@ -79,8 +91,12 @@ def load_oauth_service(credentials_file, token_file, sender):
             handle.write(credentials.to_json())
         return build("gmail", "v1", credentials=credentials, cache_discovery=False)
     except GoogleAuthError as exc:
-        raise ValueError("Google authorization failed. Use a new --token file to sign in again; "
-                         "Workspace accounts may require administrator approval.") from exc
+        details = next((part for part in exc.args if isinstance(part, dict)), {})
+        code = details.get("error", "")
+        # Report only a standard error identifier, never raw token responses.
+        label = f" ({code})" if isinstance(code, str) and re.fullmatch(r"[a-z_]{1,50}", code) else ""
+        raise ValueError(f"Google authorization failed{label}. Check the OAuth client and account "
+                         "permissions, or use a new --token file to sign in again.") from exc
     except HttpError as exc:
         raise ValueError(f"Google API setup failed (HTTP {exc.resp.status}); enable Gmail API "
                          "in the credentials' Cloud project and check account permissions.") from exc

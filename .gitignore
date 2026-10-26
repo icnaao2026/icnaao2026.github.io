@@ -40,3 +40,7 @@
 /regis/**/*token*.json
 /regis/**/client_secret*.json
 /regis/.venv/
+
+# Generated speaker invitations, previews, and delivery history.
+/speaker_invitations/out/
+/speaker_invitations/__pycache__/

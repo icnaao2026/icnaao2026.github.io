@@ -1,4 +1,5 @@
 import base64
+import json
 from email import policy
 from email.parser import BytesParser
 from pathlib import Path
@@ -11,6 +12,38 @@ import send_acceptance_emails as emails
 
 
 class EmailTests(unittest.TestCase):
+    def test_revoked_refresh_token_reopens_browser_and_verifies_sender(self):
+        try:
+            from google.auth.exceptions import RefreshError
+        except ImportError:
+            self.skipTest("OAuth dependencies not installed")
+        token = self.history.with_name("token.json")
+        token.write_text(json.dumps({"scopes": emails.OAUTH_SCOPES}))
+        original = token.read_text()
+        cached, fresh = MagicMock(), MagicMock()
+        cached.valid, cached.expired = False, True
+        cached.refresh.side_effect = RefreshError("invalid_grant: expired", {"error": "invalid_grant"})
+        fresh.to_json.return_value = '{"new": true}'
+        credentials_file = self.history.with_name("credentials.json")
+        credentials_file.write_text("{}")
+        with patch("google.oauth2.credentials.Credentials.from_authorized_user_info", return_value=cached), \
+                patch("google.auth.transport.requests.Request"), \
+                patch("google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file") as flow, \
+                patch("google.auth.transport.requests.AuthorizedSession") as session, \
+                patch("googleapiclient.discovery.build") as build:
+            flow.return_value.run_local_server.return_value = fresh
+            response = session.return_value.__enter__.return_value.get.return_value
+            response.status_code = 200
+            response.json.return_value = {"email": "wrong@gmail.com"}
+            with self.assertRaisesRegex(ValueError, "Signed in as"):
+                emails.load_oauth_service(credentials_file, token, "sender@gmail.com")
+            self.assertEqual(token.read_text(), original)
+            build.assert_not_called()
+            response.json.return_value = {"email": "sender@gmail.com"}
+            self.assertIs(emails.load_oauth_service(credentials_file, token, "sender@gmail.com"), build.return_value)
+            self.assertEqual(json.loads(token.read_text()), {"new": True})
+            self.assertEqual(flow.return_value.run_local_server.call_args.kwargs["login_hint"], "sender@gmail.com")
+
     def setUp(self):
         self.record = {"row": 3, "name": "Example Author", "title": "A title & its applications",
                        "filename": "20261014_182542_Example_Author.pdf"}
