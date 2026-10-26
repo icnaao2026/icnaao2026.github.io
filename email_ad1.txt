@@ -9,7 +9,7 @@ ICNAAO is a friendly place to share your work, hear fresh perspectives, and conn
 We’d love to hear about your research. Suggested topics includes, but not limited to, nonlinear functional analysis, fixed point theory, differential equations, optimization, variational inequalities, game theory, computational science, machine learning, and applications in operations research, economics, and engineering.
 
 Special issues:
-Accepted conference contributions will have the opportunity to be considered for special issues in the following Scopus Q1 journals:
+Accepted conference contributions will have the opportunity to be considered for special issues in the following Q1 (Scopus / SJR) journals:
 • Optimization (Taylor & Francis)
 • Bangmod International Journal of Mathematical and Computational Science (TaCS-CoE, KMUTT)
 
