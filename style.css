@@ -521,6 +521,10 @@ footer a:hover {
     border-top: 1px dashed var(--orange-200);
 }
 
+.revised-date {
+    color: #b91c1c;
+}
+
 .announcement-message {
     margin-bottom: 0.35rem;
     color: var(--orange-700);
