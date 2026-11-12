@@ -92,8 +92,34 @@
 }
 
 #participants-table {
-    min-width: 30rem;
+    display: table;
+    width: 100%;
+    min-width: 54rem;
     margin-top: 0;
+    table-layout: fixed;
+    white-space: normal;
+}
+
+.participant-name-column {
+    width: 22%;
+}
+
+.participant-category-column {
+    width: 18%;
+}
+
+.participant-country-column {
+    width: 12%;
+}
+
+.participant-title-column {
+    width: 48%;
+}
+
+.participant-title {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    line-height: 1.6;
 }
 
 #participants-table caption {

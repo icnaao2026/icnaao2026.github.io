@@ -13,13 +13,14 @@
         name: normalize(row.cells[0].textContent),
         category: row.cells[1].textContent.trim(),
         country: row.cells[2].textContent.trim(),
+        title: normalize(row.cells[3].textContent),
     }));
 
     function update() {
         const terms = normalize(search.value).split(/\s+/).filter(Boolean);
         let visible = 0;
         for (const person of people) {
-            const text = `${person.name} ${normalize(person.country)}`;
+            const text = `${person.name} ${normalize(person.country)} ${person.title}`;
             const matches = terms.every(term => text.includes(term))
                 && (!category.value || person.category === category.value)
                 && (!country.value || person.country === country.value);

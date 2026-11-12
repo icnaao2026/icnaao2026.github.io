@@ -59,7 +59,7 @@
         <form class="participants-filters" id="participant-filters" role="search" hidden>
             <div class="participant-search">
                 <label for="participant-search">Search participants</label>
-                <input type="search" id="participant-search" placeholder="Search by name or country" autocomplete="off">
+                <input type="search" id="participant-search" placeholder="Search by name, country or talk title" autocomplete="off">
             </div>
             <div>
                 <label for="participant-category">Category</label>
@@ -95,519 +95,626 @@
         <div class="participants-table-wrapper" role="region" aria-label="Registered participants table" tabindex="0">
             <table id="participants-table">
                 <caption>ICNAAO 2026 registered participants</caption>
+                <colgroup>
+                    <col class="participant-name-column">
+                    <col class="participant-category-column">
+                    <col class="participant-country-column">
+                    <col class="participant-title-column">
+                </colgroup>
                 <thead>
-                    <tr><th scope="col">Name</th><th scope="col">Category</th><th scope="col">Country</th></tr>
+                    <tr><th scope="col">Name</th><th scope="col">Category</th><th scope="col">Country</th><th scope="col">Talk title</th></tr>
                 </thead>
                 <tbody>
                     <tr data-participant>
                         <td class="participant-name">Abdul Ahad</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Pakistan</td>
+                        <td class="participant-title">On the numerical solution of the third and fourth Painlevé equations arising in two-dimensional quantum gravity via Haar wavelets based algorithms</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Abubakar Adamu</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>China</td>
+                        <td class="participant-title">A Strongly Convergent Result of the Modified Subgradient Extragradient Method for Variational Inequality Problems with Application to Image Restoration</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">AMMAR IBRAHIM SANI</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">A Conservation-Aware Physics-Informed Neural Network for Steady-State Ion-Coupled Drift–Diffusion–Poisson Modeling of Perovskite Devices</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Anand Kumar Jha</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Adaptive, Risk-Certified Security Evaluation of Tool-Using AI Agents in Stateful Adversarial Environments</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Anoop Kumar Pathariya</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Economic and Mathematical Optimization of Renewable Energy Systems Integrated with Thermal Energy Storage</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Arnab Bhabak</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Partially Observable Semi-Markov First-Passage Stopping Games with Risk Probability Criterion</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Ayman Alyas</td>
                         <td><span class="participant-category">Non-presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">—</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Ayush Choubey</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Riemann–Christoffel curvature tensor field of the product of two complex two-plane Grassmannians</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Benard Alechenu</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Nigeria</td>
+                        <td class="participant-title">Development of Five-Step Two-Point Optimized Hybrid Method Based on Volterra Integral Equation of the Second Kind to Solve Third-Order Initial Value Problems</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Bhabani Lamsal</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Nepal</td>
+                        <td class="participant-title">Derivation and Numerical Analysis of Depth-Averaged Equations for Mixture Mass Flows</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Bharat Kumar</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Optimality of Grand Bundling Mechanism in the Two-Item Setting for Distributions with a Decreasing Density</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Binayak S. Choudhury</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">A unified framework of optimization problems in Hadamard spaces</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Bishal Biswas</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">On weakly quasi ε-efficient solutions for a non-smooth multiobjective conic semi-infinite programming problems having vanishing constraints</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Chakapan Chanpilom</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Entropy-Guided Ant Colony Optimization for 1D Cutting Stock Problem with Product Substitution in Steel Industry</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">D. R. Sahu</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Acceleration of Computational Methods for Constraint Monotone Inclusion and Constraint Optimization Problems with Applications</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Debanjan Gangopadhyay</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Network Design and Cyclic Routing for Mid-Mile Logistics</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Duangkamon Kumtaeng</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">A Two-Step Inertial Tseng Splitting Algorithm with Dynamic Reference Point Projections for Monotone Inclusions and Biomedical Diagnostics</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Faizan Ali Khan</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Gradient-Type Projection Methods for Bilevel Equilibrium Problems and Its Applications</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Feeroz Babu</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Taiwan</td>
+                        <td class="participant-title">Non-Lipschitz inertial method for monotone Inclusion problems</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Getaye Fentaw</td>
                         <td><span class="participant-category">Non-presenter</span></td>
                         <td>Ethiopia</td>
+                        <td class="participant-title">—</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Gurkirat Wadhwa</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Supplier Encroachment: Co-existence, Elimination, or Market Exit? The Role of Product Essentialness</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Hafiza Maria Arshad</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">A Double-Averaged Fixed Point Framework for Weak Enriched Strictly Pseudocontractive Mappings with Applications to Image Reconstruction</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Hafsa Rashid</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Hypergeometric Ostrowski-Type Inequalities for Power-Weighted Optimisation</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Hamza Naveed</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">A novel approach using interval-valued q-rung orthopair fuzzy soft sets and Aczél-Alsina operators: Application in evaluation of artificial intelligence-based computing techniques</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Hitesh Kumar</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Integrated Techno-Economic and Multi-Objective Optimization of Hybrid Renewable Energy Systems Using Operations Research</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Jamilu Abubakar</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">A Fejér-preserving conjugate direction for the generalized split inclusion problem, with applications to radiation therapy planning and tomato leaf disease classification</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Jaya Rani</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Trans-para-Sasakian space forms</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Jeetendrasingh Maan</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">The Index Whittaker Transform: Convolution Structures, Function Spaces, and Pseudo-Differential Operators</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Jukrapong Tiammee</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">A self-adaptive double inertial penalty algorithm for convex bilevel optimization with split feasibility constraints</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Kabir Mohammed</td>
                         <td><span class="participant-category">Non-presenter</span></td>
                         <td>Nigeria</td>
+                        <td class="participant-title">—</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Kannirun Suayngam</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">A Double Inertial Embedded Modified S-Iteration Algorithm for Quasi-Nonexpansive Mappings in Hilbert Spaces</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Kapil Kumar Verma</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Improved Chen–Tripathi inequality for warped product submanifolds</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Kasamsuk Ungchittrakool</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">An Accelerated Two-Step Inertial Forward-Backward Algorithm with Moving Point Projection for Convex Bilevel Optimization and Its Application to Data Classification</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Kasim Sagir</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Spectral Analysis and Energy Hierarchy of Edge-Subdivision Signed Graphs</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">KOBKOON JANNGAM</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Halpern-type forward–backward method with inertial and correction terms: strong convergence, rates, and image deblurring</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Konrawut Khammahawong</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">A Double Inertial Projection Method for Inverse Quasi-variational Inequality Problems</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Madhu Dhiman</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">News-aided Epidemic Management: Controlling Peak Infection Levels</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Michel De Lara</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>France</td>
+                        <td class="participant-title">Learning with Representation Losses</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Mohd Sharique</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">A Unified Resolvent–Yosida–Cayley Approach to Systems of Nonlinear Variational Inclusions in q-Uniformly Smooth Banach Spaces</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Muhammad Navid Alam</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Fuzzy Degree-Based Topological Indices and Entropy Measures of Carbon Nanocone Graphs with Structural Optimization Applications</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Muhammad Waqar</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Pakistan</td>
+                        <td class="participant-title">Physics-Informed Neural Networks for Internal and External Incompressible Flows: Lid-Driven Cavity at Re=5000 and Flow Past a Circular Cylinder at Re=40</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Muhammad Yousuf Saifi</td>
                         <td><span class="participant-category">Non-presenter</span></td>
                         <td>Italy</td>
+                        <td class="participant-title">—</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Muhammad Zaid</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Pakistan</td>
+                        <td class="participant-title">High-order Haar wavelet based numerical algorithm for system of nonlinear singular Emden–Fowler equations arising in astrophysics</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Narendra Kumawat</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">An Adaptive Wavelet-Enhanced Physics-Informed Neural Network for Solving Fractional Partial Differential Equations</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Natthaya Boonyam</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Interpretable Models, Honest Estimates: Bayesian Optimization, Nested Cross-Validation and SHAP for Small Cancer Datasets</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Nimit Nimana</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Fixed-Point Delayed Subgradient Methods for Nonsmooth Convex Optimization Problems</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Nontawat Eiamniran</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">A Safeguarded Proximal Quasi-Newton Method for Nonsmooth Nonconvex Optimization</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Nutt Tananimit</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Fixed-Time Gradient Neural Networks for Solving Time-Varying Absolute Value Equations</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">OGUNDARE Olusegun Samuel</td>
                         <td><span class="participant-category">Non-presenter</span></td>
                         <td>Nigeria</td>
+                        <td class="participant-title">—</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Om Prakash</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Stochastic Manufacturing System with Rework Process of Defective Items under a Random Machine Breakdown and its Emergency Repair</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Pakkapon Preechasilp</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Sharp Lipschitz Regularity and Smoothing of the Generalized Fischer–Burmeister Mapping</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Panatda Boonman</td>
                         <td><span class="participant-category">Non-presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">—</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Pankaj Kumar</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Solving Interval Bilevel Linear Programming Problems Using a Bijective Mapping: An Application to Portfolio Optimization</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Paparb Hatnumsap</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">On the Construction of Graphs with Given Integer Eigenvalues</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Parichat Siying</td>
                         <td><span class="participant-category">Non-presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">—</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Pawaton kaemawichanurat</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Kempe Swaps in Graph Coloring Games</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Pintu Kumar</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">LENS: Entropy-Based Noisy Label Detection Algorithm for Robust Graph Machine Learning</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Pooja Jangir</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Adaptive Physics-Informed Neural Network for Variable-Order Fractional Reaction–Diffusion Epidemic Models</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Pranav Machingal</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Protein structural superfamily classification using hand-crafted and language model features: A performance vs interpretability trade-off</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Prasit Cholamjiak</td>
                         <td><span class="participant-category">Non-presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">—</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Praveen Kumar</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Continuous Wavelet Analysis Associated with the Kontorovich-Lebedev-Clifford Transform</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Premyuda Dechboon</td>
                         <td><span class="participant-category">Non-presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">—</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Puskar Raj Pokhrel</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Nepal</td>
+                        <td class="participant-title">Numerical Decomposition and Dynamic Analysis of Mixture Mass Flows Model</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Rabian Wangkeeree</td>
                         <td><span class="participant-category">Non-presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">—</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Ramsha Shafqat</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Global Convergence and Dynamic Preservation in a Nonstandard Finite-Difference Formulation of the SIR Model with Holling Type-III Incidence</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">RIFAQAT ALI</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Blockchain-Based Authentication for Secure Robotic Telesurgery over the Tactile Internet</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Riya Sultana</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Queue or Lounge: System Perspective under Strategic Customer Heterogeneity</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Rohit Nair</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Automated Optimization Modeling with Low-Bit LLMs</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">SAALAM ALI</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Aczél–Alsina Aggregation and CIMAS–MABAC under q-Rung Orthopair Fuzzy Z-Numbers for Hydropower Project Prioritization</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Sadiq Abubakar Maidugu</td>
                         <td><span class="participant-category">Non-presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">—</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">SAGIR IBRAHIM</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Spectral Riemannian Conjugate Gradient Methods Based on Modified LS and CD Parameters with Applications to Extreme Learning Machines</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Sakan Termkaew</td>
                         <td><span class="participant-category">Non-presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">—</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Sani Salisu</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">A Block Proximal-Gradient Method with Adaptive Step Sizes for Separable Composite Convex Minimization</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Santosh Kumar</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">A Brief Introduction of Generalised Metric Spaces and It&#x27;s Applications</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Sayaphat Suksai</td>
                         <td><span class="participant-category">Non-presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">—</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Seangleng Khe</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">A Bilevel Approach to Fair Aggregation in Demand Response</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Sharif Shabir</td>
                         <td><span class="participant-category">Non-presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">—</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Subit Kumar Jain</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">A Learnable Telegraph-Guided Coupled Deformable Model for Robust Ultrasound Image Segmentation</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">SUGRA IDREES</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Composition Sensitivity and Coupled Transport of a Maxwell Ternary Hybrid Nanofluid over a Radially Stretching Disk with Cattaneo–Christov Double Diffusion</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Sushil Kumar</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">A Mathematical Approach to develop AI model for Emotion Recognition</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Suthep Suantai</td>
                         <td><span class="participant-category">Non-presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">—</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Takuto Kajimura</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Japan</td>
+                        <td class="participant-title">Spherically vicinal mappings and a fixed point theorem on Banach spheres</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Talal Taha</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Response Surface Optimization of Thermal and Mass Transport in Porous Media for Biomedical Microfluidic Systems using Numerical Simulation and Artificial Intelligence</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Tanakit Thianwan</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Convergence analysis and algorithmic art in polynomiographic visualization of the Picard–P hybrid iterative method</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">tanmoy Som</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">Tolerance-based intuitionistic fuzzy-rough set approach for feature selection</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Tariq Hassan</td>
                         <td><span class="participant-category">Non-presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">—</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">THACH TAN PHONG</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Vietnam</td>
+                        <td class="participant-title">Active-set Newton methods for trapezoid-smoothed generalized pinball SVMs</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Thanyarat Jitpeera</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Strong Convergence of Two-step Inertial Splitting Method for Inclusion and Fixed Point Problems in Hilbert Spaces</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Thirumulanathan D</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>India</td>
+                        <td class="participant-title">A Worst-Case Analysis of the Merger Paradox</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Thitima Muangphara</td>
                         <td><span class="participant-category">Non-presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">—</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Tran Thi Bich Tram</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">An extragradient projection neurodynamic model for convex multi-objective optimization</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Umar Muhammad Ali</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Exploring New Optical Soliton Solutions of the Aigerim–Ratbay–Shyngys Equation Using Improved Analytical Techniques</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Urairat Deepan</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Stability of ideal Nash equilibrium points in generalized multi-criteria games, interval-valued games, and existence in single-leader–multi-follower problems</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Wachirapong Jirakitpuwapat</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Bayesian Optimized Multitask Deep Learning for Blight Disease Analysis in Major Thai Crops</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Yasunori Kimura</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Japan</td>
+                        <td class="participant-title">Unified Perturbation Functions for Resolvent Operators in Geodesic Spaces</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Yirga Abebe Belay</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">A Projection-Based Adaptive Neurodynamic Approach for Constrained Multi-agent Resource Allocation Problems</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Zammad Ali</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">Componentwise Centre-Radius Hadamard Gronwall Inequalities and Applications to Interval-Valued Optimisation</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">Zeeshan Ali</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Malaysia</td>
+                        <td class="participant-title">Investigating the Optimal Balance Between Natural Killer Cells and Oncolytic Viruses Using Discrete Fractional-Order Modeling and Artificial Neural Networks</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">นันทพร ชื่นสุพันธรัตน์</td>
                         <td><span class="participant-category">Non-presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">—</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">วิภาวี ดำมินเศษ</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">A Neurodynamic Approach to Polynomially Smoothed Pinball-Loss Support Vector Machines with Application to Telecom Customer Churn Classification</td>
                     </tr>
                     <tr data-participant>
                         <td class="participant-name">อภินันท์ โพธิ์ตุ่น</td>
                         <td><span class="participant-category">Presenter</span></td>
                         <td>Thailand</td>
+                        <td class="participant-title">A Neurodynamic Framework for Multi-View Probability Fusion in Glaucoma Classification</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <p id="participant-empty" class="participant-empty" hidden>No participants match your filters. Try another name, category, or country.</p>
+        <p id="participant-empty" class="participant-empty" hidden>No participants match your filters. Try another name, category, country, or talk title.</p>
     </main>
 
 
