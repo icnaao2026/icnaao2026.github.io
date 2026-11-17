@@ -217,6 +217,11 @@ header p strong::before {
     height: 56px;
 }
 
+.header-logos img.logo-sift {
+    width: 44px;
+    height: 44px;
+}
+
 /* ---------- Navigation ---------- */
 
 nav {
@@ -634,6 +639,11 @@ footer a:hover {
     .header-logos img.logo-erasmus {
         width: min(40vw, 116px);
         height: 48px;
+    }
+
+    .header-logos img.logo-sift {
+        width: 36px;
+        height: 36px;
     }
 
     table {
