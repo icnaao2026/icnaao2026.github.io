@@ -10,7 +10,7 @@
     padding: 0.35rem;
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
-    background: var(--orange-50);
+    background: var(--soft-surface);
 }
 .program-modes button {
     min-height: 2.8rem;
@@ -18,7 +18,7 @@
     border: 1px solid transparent;
     border-radius: var(--radius-sm);
     background: transparent;
-    color: var(--orange-800);
+    color: var(--accent-text);
     font: inherit;
     font-size: 0.9rem;
     font-weight: 700;
@@ -52,8 +52,8 @@
     padding: 0.45rem 0.8rem;
     border: 1px solid var(--border-color);
     border-radius: var(--radius-sm);
-    color: var(--orange-800);
-    background: var(--orange-50);
+    color: var(--accent-text);
+    background: var(--soft-surface);
     font-size: 0.85rem;
     text-decoration: none;
 }
@@ -83,7 +83,7 @@
 }
 .program-session-link { display: block; text-decoration: none; }
 .program-session-link > span { display: block; }
-.program-code { color: var(--orange-800); font-weight: 800; }
+.program-code { color: var(--accent-text); font-weight: 800; }
 .program-session-link > span + span { margin-top: 0.35rem; font-size: 0.85rem; line-height: 1.5; }
 .program-slot-note { display: block; margin-top: 0.35rem; color: var(--muted-color); font-size: 0.78rem; }
 .program-unavailable { color: var(--muted-color); }
@@ -93,7 +93,7 @@
 .program-session summary {
     padding: 0.95rem 1rem;
     border-radius: var(--radius-sm);
-    background: var(--orange-50);
+    background: var(--soft-surface);
     cursor: pointer;
     line-height: 1.55;
 }
@@ -112,12 +112,12 @@
 .program-presenter { font-size: 0.9rem; font-weight: 600; }
 .program-context { margin-bottom: 0.4rem !important; color: var(--muted-color); font-size: 0.85rem; }
 .program-talk-list .program-context { display: none; }
-.program-reserve { color: var(--muted-color); font-size: 0.85rem; background: var(--orange-50); }
+.program-reserve { color: var(--muted-color); font-size: 0.85rem; background: var(--soft-surface); }
 .program-results:not(:empty) { display: grid; gap: 0.85rem; }
 .program-results > li { border: 1px solid var(--border-color); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow-sm); }
 .program-results > li:hover { border-color: var(--orange-300); }
 .program-filters:not([hidden]) { grid-template-columns: minmax(13rem, 2fr) minmax(8rem, 1fr) minmax(7rem, 1fr) auto; }
-body > footer { padding-bottom: 15rem; }
+body > footer { padding-bottom: 19rem; }
 @media (max-width: 850px) {
     .program-filters:not([hidden]) { grid-template-columns: 1fr 1fr; }
 }
