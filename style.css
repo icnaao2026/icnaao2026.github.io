@@ -668,6 +668,52 @@ footer a:hover {
     }
 }
 
+/* ---------- Floating page shortcuts ---------- */
+
+.floating-page-links {
+    position: fixed;
+    right: max(1rem, env(safe-area-inset-right));
+    bottom: max(1rem, env(safe-area-inset-bottom));
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.floating-date-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.4rem;
+}
+
+.floating-page-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 2.8rem;
+    padding: 0.65rem 1rem;
+    border: 1px solid var(--orange-600);
+    border-radius: 999px;
+    color: #fff;
+    background: var(--orange-700);
+    box-shadow: var(--shadow-lift);
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.floating-date-links .floating-page-link { padding-inline: 0.75rem; }
+.floating-page-link:hover { color: #fff; background: var(--orange-800); }
+.floating-page-link:focus-visible { outline: 3px solid var(--orange-400); outline-offset: 3px; border-radius: 999px; }
+
+footer { padding-bottom: 5rem; }
+
+@media print {
+    .floating-page-links { display: none !important; }
+}
+
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;

@@ -12,14 +12,17 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICNAAO 2026 - Tentative Program</title>
+    <title>ICNAAO 2026 - Program</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="participants.css">
+    <link rel="stylesheet" href="program.css">
+    <script src="program.js" defer></script>
 </head>
 <body>
 
-    <header>
+    <header id="page-top">
         <h1>ICNAAO 2026</h1>
-        <p>Tentative Program</p>
+        <p>Conference Program</p>
 
         <div class="header-logos" aria-label="Conference organizers, partners, and sponsors">
             <img class="logo-kmutt" src="assets/kmutt-logos-transparent.png" alt="King Mongkut's University of Technology Thonburi (KMUTT), Faculty of Science, and Department of Mathematics logos" loading="lazy">
@@ -32,7 +35,7 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="program.html" class="active">Program</a>
+        <a href="program.html" class="active" aria-current="page">Program</a>
         <a href="call-for-papers.html">Call for Papers</a>
         <a href="registration.html">Registration</a>
         <a href="participants.html">Participants</a>
@@ -41,183 +44,939 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    <div class="container">
 
-        <h2>Tentative Program</h2>
-
-        <p>
-            The conference will be held from
-            <strong>14–16 December 2026</strong> at
-            King Mongkut's University of Technology Thonburi (KMUTT),
-            Bangkok, Thailand.
-        </p>
-
-        <div class="highlight-box">
-            <p>
-                <strong>Please note:</strong>
-                The following program is tentative and may be adjusted
-                as appropriate.
-            </p>
+    <main class="container participants-page program-page" id="main-content">
+        <h2>Conference Program</h2>
+        <p>14–16 December 2026 · King Mongkut’s University of Technology Thonburi, Bangkok, Thailand.</p>
+        <p class="participants-updated">Last updated: <time datetime="2026-11-22">22 November 2026</time> · All times are Bangkok time (UTC+7).</p>
+        <div class="highlight-box program-notice"><p><strong>Draft program.</strong> Times and room assignments are subject to change. Final room names will be confirmed.</p></div>
+        <dl class="participants-summary" aria-label="Program summary">
+            <div><dt>Conference days</dt><dd>3</dd></div>
+            <div><dt>Contributed talks</dt><dd>83</dd></div>
+            <div><dt>Invited talks</dt><dd>11</dd></div>
+            <div><dt>Keynote lectures</dt><dd>4</dd></div>
+        </dl>
+        <div class="program-modes" id="program-modes" role="group" aria-label="Program view" hidden>
+            <button type="button" data-mode="full" aria-pressed="true" aria-controls="program-full">Full program</button>
+            <button type="button" data-mode="interactive" aria-pressed="false" aria-controls="program-interactive">Interactive program</button>
         </div>
+        <section id="program-full" aria-labelledby="full-heading">
+            <h3 id="full-heading">Full program</h3>
+            <p class="participants-note">Choose a session code to see its talks. Each contributed talk has 20 minutes, including questions.</p>
+            <nav class="program-day-links" aria-label="Jump to a conference day">
+                <a href="#day-14">14 December</a><a href="#day-15">15 December</a><a href="#day-16">16 December</a>
+            </nav>
+            <section class="program-day" id="day-14" aria-labelledby="day-heading-14">
+                <h2 id="day-heading-14">14 December 2026</h2>
+                <div class="program-table-wrapper" role="region" aria-label="14 December timetable" tabindex="0">
+                    <table class="program-timetable">
+                        <caption>Timetable for 14 December 2026</caption>
+                        <colgroup><col class="program-time-column"><col><col><col></colgroup>
+                        <thead><tr><th scope="col">Time</th><th scope="col">Room 1</th><th scope="col">Room 2</th><th scope="col">Room 3</th></tr></thead><tbody>
+<tr><th scope="row" class="program-time">08:00–09:00</th>
+<td colspan="3" class="program-shared">Registration</td>
+</tr>
+<tr><th scope="row" class="program-time">09:00–09:30</th>
+<td colspan="3" class="program-shared">Opening ceremony</td>
+</tr>
+<tr><th scope="row" class="program-time">09:30–10:15</th>
+<td><a class="program-session-link" href="#session-kn1"><span class="program-code">KN1</span><span>Mohamed Amine Khamsi</span></a><span class="program-slot-note">Keynote lecture</span></td>
+<td class="program-unavailable">—</td>
+<td class="program-unavailable">—</td>
+</tr>
+<tr><th scope="row" class="program-time">10:15–10:30</th>
+<td colspan="3" class="program-shared">Coffee / tea break</td>
+</tr>
+<tr><th scope="row" class="program-time">10:30–11:00</th>
+<td><a class="program-session-link" href="#session-inv01"><span class="program-code">INV01</span><span>Nimit Nimana</span></a><span class="program-slot-note">Invited talk</span></td>
+<td><a class="program-session-link" href="#session-inv02"><span class="program-code">INV02</span><span>Charoenchai Khompatraporn</span></a><span class="program-slot-note">Invited talk</span></td>
+<td class="program-unavailable">—</td>
+</tr>
+<tr><th scope="row" class="program-time">11:00–12:40</th>
+<td><a class="program-session-link" href="#session-ctr01"><span class="program-code">CTR01</span><span>Optimization and Variational problems</span></a><span class="program-slot-note">5 talks</span></td>
+<td><a class="program-session-link" href="#session-ctr02"><span class="program-code">CTR02</span><span>Differential equations and Mathematical modeling</span></a><span class="program-slot-note">5 talks</span></td>
+<td class="program-unavailable">—</td>
+</tr>
+<tr><th scope="row" class="program-time">12:40–13:45</th>
+<td colspan="3" class="program-shared">Lunch break</td>
+</tr>
+<tr><th scope="row" class="program-time">13:45–14:30</th>
+<td><a class="program-session-link" href="#session-kn2"><span class="program-code">KN2</span><span>Joydeep Dutta</span></a><span class="program-slot-note">Keynote lecture</span></td>
+<td class="program-unavailable">—</td>
+<td class="program-unavailable">—</td>
+</tr>
+<tr><th scope="row" class="program-time">14:30–15:00</th>
+<td><a class="program-session-link" href="#session-inv03"><span class="program-code">INV03</span><span>Yasunori Kimura</span></a><span class="program-slot-note">Invited talk</span></td>
+<td><a class="program-session-link" href="#session-inv04"><span class="program-code">INV04</span><span>Tanmoy Som</span></a><span class="program-slot-note">Invited talk</span></td>
+<td class="program-unavailable">—</td>
+</tr>
+<tr><th scope="row" class="program-time">15:00–16:00</th>
+<td><a class="program-session-link" href="#session-ctr03"><span class="program-code">CTR03</span><span>Fixed point theory, Nonlinear analysis and Geometry</span></a><span class="program-slot-note">3 talks</span></td>
+<td><a class="program-session-link" href="#session-ctr04"><span class="program-code">CTR04</span><span>Machine learning, Data science and Decision science</span></a><span class="program-slot-note">3 talks</span></td>
+<td class="program-unavailable">—</td>
+</tr>
+<tr><th scope="row" class="program-time">16:00–16:10</th>
+<td colspan="3" class="program-shared">Coffee / tea break</td>
+</tr>
+<tr><th scope="row" class="program-time">16:10–17:30</th>
+<td><a class="program-session-link" href="#session-ctr05"><span class="program-code">CTR05</span><span>Operations research and Game theory</span></a><span class="program-slot-note">4 talks</span></td>
+<td><a class="program-session-link" href="#session-ctr06"><span class="program-code">CTR06</span><span>Machine learning, Data science and Decision science</span></a><span class="program-slot-note">4 talks</span></td>
+<td><a class="program-session-link" href="#session-ctr07"><span class="program-code">CTR07</span><span>Optimization and Variational problems</span></a><span class="program-slot-note">4 talks</span></td>
+</tr>
+</tbody></table></div><div class="program-session-list">
+<details class="program-session" id="session-kn1" open>
+                    <summary><span class="program-code">KN1</span><span class="program-session-title">Keynote lecture</span><span class="program-session-meta">09:30–10:15 · Room 1</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-kn1" class="program-talk" data-program-talk data-session="KN1" data-code="" data-abstract="" data-date="2026-12-14" data-room="Room 1" data-presenter="Mohamed Amine Khamsi" data-title="Talk title to be announced">
+                        <p class="program-context"><span class="program-code">KN1</span> · 14 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T09:30:00+07:00">09:30</time>–10:15 <span class="participant-category">Keynote</span></p>
+                        <h4>Talk title to be announced</h4>
+                        <p class="program-presenter">Mohamed Amine Khamsi</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-inv01" open>
+                    <summary><span class="program-code">INV01</span><span class="program-session-title">Invited talk</span><span class="program-session-meta">10:30–11:00 · Room 1</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a055" class="program-talk" data-program-talk data-session="INV01" data-code="" data-abstract="A055" data-date="2026-12-14" data-room="Room 1" data-presenter="Nimit Nimana" data-title="Fixed-Point Delayed Subgradient Methods for Nonsmooth Convex Optimization Problems">
+                        <p class="program-context"><span class="program-code">INV01</span> · 14 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T10:30:00+07:00">10:30</time>–11:00 · A055 <span class="participant-category">Invited</span></p>
+                        <h4>Fixed-Point Delayed Subgradient Methods for Nonsmooth Convex Optimization Problems</h4>
+                        <p class="program-presenter">Nimit Nimana</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-inv02" open>
+                    <summary><span class="program-code">INV02</span><span class="program-session-title">Invited talk</span><span class="program-session-meta">10:30–11:00 · Room 2</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-inv02" class="program-talk" data-program-talk data-session="INV02" data-code="" data-abstract="" data-date="2026-12-14" data-room="Room 2" data-presenter="Charoenchai Khompatraporn" data-title="Talk title to be announced">
+                        <p class="program-context"><span class="program-code">INV02</span> · 14 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T10:30:00+07:00">10:30</time>–11:00 <span class="participant-category">Invited</span></p>
+                        <h4>Talk title to be announced</h4>
+                        <p class="program-presenter">Charoenchai Khompatraporn</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-ctr01" open>
+                    <summary><span class="program-code">CTR01</span><span class="program-session-title">Optimization and Variational problems</span><span class="program-session-meta">11:00–12:40 · Room 1</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a050" class="program-talk" data-program-talk data-session="CTR01" data-code="OPT-007" data-abstract="A050" data-date="2026-12-14" data-room="Room 1" data-presenter="Konrawut Khammahawong" data-title="A Double Inertial Projection Method for Inverse Quasi-variational Inequality Problems">
+                        <p class="program-context"><span class="program-code">CTR01</span> · 14 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T11:00:00+07:00">11:00</time>–11:20 · A050 · OPT-007 <span class="participant-category">Contributed</span></p>
+                        <h4>A Double Inertial Projection Method for Inverse Quasi-variational Inequality Problems</h4>
+                        <p class="program-presenter">Konrawut Khammahawong</p>
+                    </li>
+<li id="talk-a064" class="program-talk" data-program-talk data-session="CTR01" data-code="OPT-012" data-abstract="A064" data-date="2026-12-14" data-room="Room 1" data-presenter="Thanyarat Jitpeera" data-title="Strong Convergence of Two-step Inertial Splitting Method for Inclusion and Fixed Point Problems in Hilbert Spaces">
+                        <p class="program-context"><span class="program-code">CTR01</span> · 14 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T11:20:00+07:00">11:20</time>–11:40 · A064 · OPT-012 <span class="participant-category">Contributed</span></p>
+                        <h4>Strong Convergence of Two-step Inertial Splitting Method for Inclusion and Fixed Point Problems in Hilbert Spaces</h4>
+                        <p class="program-presenter">Thanyarat Jitpeera</p>
+                    </li>
+<li id="talk-a074" class="program-talk" data-program-talk data-session="CTR01" data-code="OPT-014" data-abstract="A074" data-date="2026-12-14" data-room="Room 1" data-presenter="Duangkamon Kumtaeng" data-title="A Two-Step Inertial Tseng Splitting Algorithm with Dynamic Reference Point Projections for Monotone Inclusions and Biomedical Diagnostics">
+                        <p class="program-context"><span class="program-code">CTR01</span> · 14 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T11:40:00+07:00">11:40</time>–12:00 · A074 · OPT-014 <span class="participant-category">Contributed</span></p>
+                        <h4>A Two-Step Inertial Tseng Splitting Algorithm with Dynamic Reference Point Projections for Monotone Inclusions and Biomedical Diagnostics</h4>
+                        <p class="program-presenter">Duangkamon Kumtaeng</p>
+                    </li>
+<li id="talk-a084" class="program-talk" data-program-talk data-session="CTR01" data-code="OPT-015" data-abstract="A084" data-date="2026-12-14" data-room="Room 1" data-presenter="Sani Salisu" data-title="A Block Proximal-Gradient Method with Adaptive Step Sizes for Separable Composite Convex Minimization">
+                        <p class="program-context"><span class="program-code">CTR01</span> · 14 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T12:00:00+07:00">12:00</time>–12:20 · A084 · OPT-015 <span class="participant-category">Contributed</span></p>
+                        <h4>A Block Proximal-Gradient Method with Adaptive Step Sizes for Separable Composite Convex Minimization</h4>
+                        <p class="program-presenter">Sani Salisu</p>
+                    </li>
+<li id="talk-a089" class="program-talk" data-program-talk data-session="CTR01" data-code="OPT-016" data-abstract="A089" data-date="2026-12-14" data-room="Room 1" data-presenter="Abubakar Adamu" data-title="A Strongly Convergent Result of the Modified Subgradient Extragradient Method for Variational Inequality Problems with Application to Image Restoration">
+                        <p class="program-context"><span class="program-code">CTR01</span> · 14 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T12:20:00+07:00">12:20</time>–12:40 · A089 · OPT-016 <span class="participant-category">Contributed</span></p>
+                        <h4>A Strongly Convergent Result of the Modified Subgradient Extragradient Method for Variational Inequality Problems with Application to Image Restoration</h4>
+                        <p class="program-presenter">Abubakar Adamu</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-ctr02" open>
+                    <summary><span class="program-code">CTR02</span><span class="program-session-title">Differential equations and Mathematical modeling</span><span class="program-session-meta">11:00–12:40 · Room 2</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a023" class="program-talk" data-program-talk data-session="CTR02" data-code="DE-003" data-abstract="A023" data-date="2026-12-14" data-room="Room 2" data-presenter="Abdul Ahad" data-title="On the numerical solution of the third and fourth Painlevé equations arising in two-dimensional quantum gravity via Haar wavelets based algorithms">
+                        <p class="program-context"><span class="program-code">CTR02</span> · 14 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T11:00:00+07:00">11:00</time>–11:20 · A023 · DE-003 <span class="participant-category">Contributed</span></p>
+                        <h4>On the numerical solution of the third and fourth Painlevé equations arising in two-dimensional quantum gravity via Haar wavelets based algorithms</h4>
+                        <p class="program-presenter">Abdul Ahad</p>
+                    </li>
+<li id="talk-a048" class="program-talk" data-program-talk data-session="CTR02" data-code="DE-005" data-abstract="A048" data-date="2026-12-14" data-room="Room 2" data-presenter="Zeeshan Ali" data-title="Investigating the Optimal Balance Between Natural Killer Cells and Oncolytic Viruses Using Discrete Fractional-Order Modeling and Artificial Neural Networks">
+                        <p class="program-context"><span class="program-code">CTR02</span> · 14 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T11:20:00+07:00">11:20</time>–11:40 · A048 · DE-005 <span class="participant-category">Contributed</span></p>
+                        <h4>Investigating the Optimal Balance Between Natural Killer Cells and Oncolytic Viruses Using Discrete Fractional-Order Modeling and Artificial Neural Networks</h4>
+                        <p class="program-presenter">Zeeshan Ali</p>
+                    </li>
+<li id="talk-a068" class="program-talk" data-program-talk data-session="CTR02" data-code="DE-007" data-abstract="A068" data-date="2026-12-14" data-room="Room 2" data-presenter="Talal Taha" data-title="Response Surface Optimization of Thermal and Mass Transport in Porous Media for Biomedical Microfluidic Systems using Numerical Simulation and Artificial Intelligence">
+                        <p class="program-context"><span class="program-code">CTR02</span> · 14 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T11:40:00+07:00">11:40</time>–12:00 · A068 · DE-007 <span class="participant-category">Contributed</span></p>
+                        <h4>Response Surface Optimization of Thermal and Mass Transport in Porous Media for Biomedical Microfluidic Systems using Numerical Simulation and Artificial Intelligence</h4>
+                        <p class="program-presenter">Talal Taha</p>
+                    </li>
+<li id="talk-a088" class="program-talk" data-program-talk data-session="CTR02" data-code="DE-011" data-abstract="A088" data-date="2026-12-14" data-room="Room 2" data-presenter="Madhu Dhiman" data-title="News-aided Epidemic Management: Controlling Peak Infection Levels">
+                        <p class="program-context"><span class="program-code">CTR02</span> · 14 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T12:00:00+07:00">12:00</time>–12:20 · A088 · DE-011 <span class="participant-category">Contributed</span></p>
+                        <h4>News-aided Epidemic Management: Controlling Peak Infection Levels</h4>
+                        <p class="program-presenter">Madhu Dhiman</p>
+                    </li>
+<li id="talk-a103" class="program-talk" data-program-talk data-session="CTR02" data-code="DE-012" data-abstract="A103" data-date="2026-12-14" data-room="Room 2" data-presenter="Tariq Hassan" data-title="Optimal Control and Cost-Effectiveness of Smoking Dynamics with Saturated Treatment">
+                        <p class="program-context"><span class="program-code">CTR02</span> · 14 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T12:20:00+07:00">12:20</time>–12:40 · A103 · DE-012 <span class="participant-category">Contributed</span></p>
+                        <h4>Optimal Control and Cost-Effectiveness of Smoking Dynamics with Saturated Treatment</h4>
+                        <p class="program-presenter">Tariq Hassan</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-kn2" open>
+                    <summary><span class="program-code">KN2</span><span class="program-session-title">Keynote lecture</span><span class="program-session-meta">13:45–14:30 · Room 1</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a114" class="program-talk" data-program-talk data-session="KN2" data-code="" data-abstract="A114" data-date="2026-12-14" data-room="Room 1" data-presenter="Joydeep Dutta" data-title="Bilevel Programming and a few things I have learnt about it">
+                        <p class="program-context"><span class="program-code">KN2</span> · 14 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T13:45:00+07:00">13:45</time>–14:30 · A114 <span class="participant-category">Keynote</span></p>
+                        <h4>Bilevel Programming and a few things I have learnt about it</h4>
+                        <p class="program-presenter">Joydeep Dutta</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-inv03" open>
+                    <summary><span class="program-code">INV03</span><span class="program-session-title">Invited talk</span><span class="program-session-meta">14:30–15:00 · Room 1</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a013" class="program-talk" data-program-talk data-session="INV03" data-code="" data-abstract="A013" data-date="2026-12-14" data-room="Room 1" data-presenter="Yasunori Kimura" data-title="Unified Perturbation Functions for Resolvent Operators in Geodesic Spaces">
+                        <p class="program-context"><span class="program-code">INV03</span> · 14 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T14:30:00+07:00">14:30</time>–15:00 · A013 <span class="participant-category">Invited</span></p>
+                        <h4>Unified Perturbation Functions for Resolvent Operators in Geodesic Spaces</h4>
+                        <p class="program-presenter">Yasunori Kimura</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-inv04" open>
+                    <summary><span class="program-code">INV04</span><span class="program-session-title">Invited talk</span><span class="program-session-meta">14:30–15:00 · Room 2</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a025" class="program-talk" data-program-talk data-session="INV04" data-code="" data-abstract="A025" data-date="2026-12-14" data-room="Room 2" data-presenter="Tanmoy Som" data-title="Tolerance-based intuitionistic fuzzy-rough set approach for feature selection">
+                        <p class="program-context"><span class="program-code">INV04</span> · 14 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T14:30:00+07:00">14:30</time>–15:00 · A025 <span class="participant-category">Invited</span></p>
+                        <h4>Tolerance-based intuitionistic fuzzy-rough set approach for feature selection</h4>
+                        <p class="program-presenter">Tanmoy Som</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-ctr03" open>
+                    <summary><span class="program-code">CTR03</span><span class="program-session-title">Fixed point theory, Nonlinear analysis and Geometry</span><span class="program-session-meta">15:00–16:00 · Room 1</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a047" class="program-talk" data-program-talk data-session="CTR03" data-code="FP-006" data-abstract="A047" data-date="2026-12-14" data-room="Room 1" data-presenter="Hafiza Maria Arshad" data-title="A Double-Averaged Fixed Point Framework for Weak Enriched Strictly Pseudocontractive Mappings with Applications to Image Reconstruction">
+                        <p class="program-context"><span class="program-code">CTR03</span> · 14 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T15:00:00+07:00">15:00</time>–15:20 · A047 · FP-006 <span class="participant-category">Contributed</span></p>
+                        <h4>A Double-Averaged Fixed Point Framework for Weak Enriched Strictly Pseudocontractive Mappings with Applications to Image Reconstruction</h4>
+                        <p class="program-presenter">Hafiza Maria Arshad</p>
+                    </li>
+<li id="talk-a049" class="program-talk" data-program-talk data-session="CTR03" data-code="FP-007" data-abstract="A049" data-date="2026-12-14" data-room="Room 1" data-presenter="Tanakit Thianwan" data-title="Convergence analysis and algorithmic art in polynomiographic visualization of the Picard–P hybrid iterative method">
+                        <p class="program-context"><span class="program-code">CTR03</span> · 14 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T15:20:00+07:00">15:20</time>–15:40 · A049 · FP-007 <span class="participant-category">Contributed</span></p>
+                        <h4>Convergence analysis and algorithmic art in polynomiographic visualization of the Picard–P hybrid iterative method</h4>
+                        <p class="program-presenter">Tanakit Thianwan</p>
+                    </li>
+<li id="talk-a081" class="program-talk" data-program-talk data-session="CTR03" data-code="FP-012" data-abstract="A081" data-date="2026-12-14" data-room="Room 1" data-presenter="Kannirun Suayngam" data-title="A Double Inertial Embedded Modified S-Iteration Algorithm for Quasi-Nonexpansive Mappings in Hilbert Spaces">
+                        <p class="program-context"><span class="program-code">CTR03</span> · 14 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T15:40:00+07:00">15:40</time>–16:00 · A081 · FP-012 <span class="participant-category">Contributed</span></p>
+                        <h4>A Double Inertial Embedded Modified S-Iteration Algorithm for Quasi-Nonexpansive Mappings in Hilbert Spaces</h4>
+                        <p class="program-presenter">Kannirun Suayngam</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-ctr04" open>
+                    <summary><span class="program-code">CTR04</span><span class="program-session-title">Machine learning, Data science and Decision science</span><span class="program-session-meta">15:00–16:00 · Room 2</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a080" class="program-talk" data-program-talk data-session="CTR04" data-code="ML-012" data-abstract="A080" data-date="2026-12-14" data-room="Room 2" data-presenter="Pranav Machingal" data-title="Protein structural superfamily classification using hand-crafted and language model features: A performance vs interpretability trade-off">
+                        <p class="program-context"><span class="program-code">CTR04</span> · 14 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T15:00:00+07:00">15:00</time>–15:20 · A080 · ML-012 <span class="participant-category">Contributed</span></p>
+                        <h4>Protein structural superfamily classification using hand-crafted and language model features: A performance vs interpretability trade-off</h4>
+                        <p class="program-presenter">Pranav Machingal</p>
+                    </li>
+<li id="talk-a092" class="program-talk" data-program-talk data-session="CTR04" data-code="ML-016" data-abstract="A092" data-date="2026-12-14" data-room="Room 2" data-presenter="Rohit Nair" data-title="Automated Optimization Modeling with Low-Bit LLMs">
+                        <p class="program-context"><span class="program-code">CTR04</span> · 14 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T15:20:00+07:00">15:20</time>–15:40 · A092 · ML-016 <span class="participant-category">Contributed</span></p>
+                        <h4>Automated Optimization Modeling with Low-Bit LLMs</h4>
+                        <p class="program-presenter">Rohit Nair</p>
+                    </li>
+<li id="talk-a099" class="program-talk" data-program-talk data-session="CTR04" data-code="ML-018" data-abstract="A099" data-date="2026-12-14" data-room="Room 2" data-presenter="Natthaya Boonyam" data-title="Interpretable Models, Honest Estimates: Bayesian Optimization, Nested Cross-Validation and SHAP for Small Cancer Datasets">
+                        <p class="program-context"><span class="program-code">CTR04</span> · 14 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T15:40:00+07:00">15:40</time>–16:00 · A099 · ML-018 <span class="participant-category">Contributed</span></p>
+                        <h4>Interpretable Models, Honest Estimates: Bayesian Optimization, Nested Cross-Validation and SHAP for Small Cancer Datasets</h4>
+                        <p class="program-presenter">Natthaya Boonyam</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-ctr05" open>
+                    <summary><span class="program-code">CTR05</span><span class="program-session-title">Operations research and Game theory</span><span class="program-session-meta">16:10–17:30 · Room 1</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a028" class="program-talk" data-program-talk data-session="CTR05" data-code="OR-001" data-abstract="A028" data-date="2026-12-14" data-room="Room 1" data-presenter="Bharat Kumar" data-title="Optimality of Grand Bundling Mechanism in the Two-Item Setting for Distributions with a Decreasing Density">
+                        <p class="program-context"><span class="program-code">CTR05</span> · 14 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T16:10:00+07:00">16:10</time>–16:30 · A028 · OR-001 <span class="participant-category">Contributed</span></p>
+                        <h4>Optimality of Grand Bundling Mechanism in the Two-Item Setting for Distributions with a Decreasing Density</h4>
+                        <p class="program-presenter">Bharat Kumar</p>
+                    </li>
+<li id="talk-a035" class="program-talk" data-program-talk data-session="CTR05" data-code="OR-002" data-abstract="A035" data-date="2026-12-14" data-room="Room 1" data-presenter="Hitesh Kumar" data-title="Integrated Techno-Economic and Multi-Objective Optimization of Hybrid Renewable Energy Systems Using Operations Research">
+                        <p class="program-context"><span class="program-code">CTR05</span> · 14 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T16:30:00+07:00">16:30</time>–16:50 · A035 · OR-002 <span class="participant-category">Contributed</span></p>
+                        <h4>Integrated Techno-Economic and Multi-Objective Optimization of Hybrid Renewable Energy Systems Using Operations Research</h4>
+                        <p class="program-presenter">Hitesh Kumar</p>
+                    </li>
+<li id="talk-a042" class="program-talk" data-program-talk data-session="CTR05" data-code="OR-005" data-abstract="A042" data-date="2026-12-14" data-room="Room 1" data-presenter="Urairat Deepan" data-title="Stability of ideal Nash equilibrium points in generalized multi-criteria games, interval-valued games, and existence in single-leader–multi-follower problems">
+                        <p class="program-context"><span class="program-code">CTR05</span> · 14 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T16:50:00+07:00">16:50</time>–17:10 · A042 · OR-005 <span class="participant-category">Contributed</span></p>
+                        <h4>Stability of ideal Nash equilibrium points in generalized multi-criteria games, interval-valued games, and existence in single-leader–multi-follower problems</h4>
+                        <p class="program-presenter">Urairat Deepan</p>
+                    </li>
+<li id="talk-a077" class="program-talk" data-program-talk data-session="CTR05" data-code="OR-007" data-abstract="A077" data-date="2026-12-14" data-room="Room 1" data-presenter="Arnab Bhabak" data-title="Partially Observable Semi-Markov First-Passage Stopping Games with Risk Probability Criterion">
+                        <p class="program-context"><span class="program-code">CTR05</span> · 14 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T17:10:00+07:00">17:10</time>–17:30 · A077 · OR-007 <span class="participant-category">Contributed</span></p>
+                        <h4>Partially Observable Semi-Markov First-Passage Stopping Games with Risk Probability Criterion</h4>
+                        <p class="program-presenter">Arnab Bhabak</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-ctr06" open>
+                    <summary><span class="program-code">CTR06</span><span class="program-session-title">Machine learning, Data science and Decision science</span><span class="program-session-meta">16:10–17:30 · Room 2</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a022" class="program-talk" data-program-talk data-session="CTR06" data-code="ML-001" data-abstract="A022" data-date="2026-12-14" data-room="Room 2" data-presenter="Subit Kumar Jain" data-title="A Learnable Telegraph-Guided Coupled Deformable Model for Robust Ultrasound Image Segmentation">
+                        <p class="program-context"><span class="program-code">CTR06</span> · 14 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T16:10:00+07:00">16:10</time>–16:30 · A022 · ML-001 <span class="participant-category">Contributed</span></p>
+                        <h4>A Learnable Telegraph-Guided Coupled Deformable Model for Robust Ultrasound Image Segmentation</h4>
+                        <p class="program-presenter">Subit Kumar Jain</p>
+                    </li>
+<li id="talk-a029" class="program-talk" data-program-talk data-session="CTR06" data-code="ML-002" data-abstract="A029" data-date="2026-12-14" data-room="Room 2" data-presenter="Anand Kumar Jha" data-title="Adaptive, Risk-Certified Security Evaluation of Tool-Using AI Agents in Stateful Adversarial Environments">
+                        <p class="program-context"><span class="program-code">CTR06</span> · 14 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T16:30:00+07:00">16:30</time>–16:50 · A029 · ML-002 <span class="participant-category">Contributed</span></p>
+                        <h4>Adaptive, Risk-Certified Security Evaluation of Tool-Using AI Agents in Stateful Adversarial Environments</h4>
+                        <p class="program-presenter">Anand Kumar Jha</p>
+                    </li>
+<li id="talk-a030" class="program-talk" data-program-talk data-session="CTR06" data-code="ML-003" data-abstract="A030" data-date="2026-12-14" data-room="Room 2" data-presenter="Nutt Tananimit" data-title="Fixed-Time Gradient Neural Networks for Solving Time-Varying Absolute Value Equations">
+                        <p class="program-context"><span class="program-code">CTR06</span> · 14 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T16:50:00+07:00">16:50</time>–17:10 · A030 · ML-003 <span class="participant-category">Contributed</span></p>
+                        <h4>Fixed-Time Gradient Neural Networks for Solving Time-Varying Absolute Value Equations</h4>
+                        <p class="program-presenter">Nutt Tananimit</p>
+                    </li>
+<li id="talk-a032" class="program-talk" data-program-talk data-session="CTR06" data-code="ML-004" data-abstract="A032" data-date="2026-12-14" data-room="Room 2" data-presenter="Vipavee Damminsed" data-title="A Neurodynamic Approach to Polynomially Smoothed Pinball-Loss Support Vector Machines with Application to Telecom Customer Churn Classification">
+                        <p class="program-context"><span class="program-code">CTR06</span> · 14 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T17:10:00+07:00">17:10</time>–17:30 · A032 · ML-004 <span class="participant-category">Contributed</span></p>
+                        <h4>A Neurodynamic Approach to Polynomially Smoothed Pinball-Loss Support Vector Machines with Application to Telecom Customer Churn Classification</h4>
+                        <p class="program-presenter">Vipavee Damminsed</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-ctr07" open>
+                    <summary><span class="program-code">CTR07</span><span class="program-session-title">Optimization and Variational problems</span><span class="program-session-meta">16:10–17:30 · Room 3</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a003" class="program-talk" data-program-talk data-session="CTR07" data-code="OPT-001" data-abstract="A003" data-date="2026-12-14" data-room="Room 3" data-presenter="Faizan Ali Khan" data-title="Gradient-Type Projection Methods for Bilevel Equilibrium Problems and Its Applications">
+                        <p class="program-context"><span class="program-code">CTR07</span> · 14 December · Room 3</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T16:10:00+07:00">16:10</time>–16:30 · A003 · OPT-001 <span class="participant-category">Contributed</span></p>
+                        <h4>Gradient-Type Projection Methods for Bilevel Equilibrium Problems and Its Applications</h4>
+                        <p class="program-presenter">Faizan Ali Khan</p>
+                    </li>
+<li id="talk-a006" class="program-talk" data-program-talk data-session="CTR07" data-code="OPT-002" data-abstract="A006" data-date="2026-12-14" data-room="Room 3" data-presenter="Pankaj Kumar" data-title="Solving Interval Bilevel Linear Programming Problems Using a Bijective Mapping: An Application to Portfolio Optimization">
+                        <p class="program-context"><span class="program-code">CTR07</span> · 14 December · Room 3</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T16:30:00+07:00">16:30</time>–16:50 · A006 · OPT-002 <span class="participant-category">Contributed</span></p>
+                        <h4>Solving Interval Bilevel Linear Programming Problems Using a Bijective Mapping: An Application to Portfolio Optimization</h4>
+                        <p class="program-presenter">Pankaj Kumar</p>
+                    </li>
+<li id="talk-a051" class="program-talk" data-program-talk data-session="CTR07" data-code="OPT-008" data-abstract="A051" data-date="2026-12-14" data-room="Room 3" data-presenter="Kasamsuk Ungchittrakool" data-title="An Accelerated Two-Step Inertial Forward-Backward Algorithm with Moving Point Projection for Convex Bilevel Optimization and Its Application to Data Classification">
+                        <p class="program-context"><span class="program-code">CTR07</span> · 14 December · Room 3</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T16:50:00+07:00">16:50</time>–17:10 · A051 · OPT-008 <span class="participant-category">Contributed</span></p>
+                        <h4>An Accelerated Two-Step Inertial Forward-Backward Algorithm with Moving Point Projection for Convex Bilevel Optimization and Its Application to Data Classification</h4>
+                        <p class="program-presenter">Kasamsuk Ungchittrakool</p>
+                    </li>
+<li id="talk-a052" class="program-talk" data-program-talk data-session="CTR07" data-code="OPT-009" data-abstract="A052" data-date="2026-12-14" data-room="Room 3" data-presenter="Jukrapong Tiammee" data-title="A self-adaptive double inertial penalty algorithm for convex bilevel optimization with split feasibility constraints">
+                        <p class="program-context"><span class="program-code">CTR07</span> · 14 December · Room 3</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-14T17:10:00+07:00">17:10</time>–17:30 · A052 · OPT-009 <span class="participant-category">Contributed</span></p>
+                        <h4>A self-adaptive double inertial penalty algorithm for convex bilevel optimization with split feasibility constraints</h4>
+                        <p class="program-presenter">Jukrapong Tiammee</p>
+                    </li>
+</ol></details>
+</div></section>
+            <section class="program-day" id="day-15" aria-labelledby="day-heading-15">
+                <h2 id="day-heading-15">15 December 2026</h2>
+                <div class="program-table-wrapper" role="region" aria-label="15 December timetable" tabindex="0">
+                    <table class="program-timetable">
+                        <caption>Timetable for 15 December 2026</caption>
+                        <colgroup><col class="program-time-column"><col><col><col></colgroup>
+                        <thead><tr><th scope="col">Time</th><th scope="col">Room 1</th><th scope="col">Room 2</th><th scope="col">Room 3</th></tr></thead><tbody>
+<tr><th scope="row" class="program-time">08:30–09:00</th>
+<td><a class="program-session-link" href="#session-inv05"><span class="program-code">INV05</span><span>Felipe Lara</span></a><span class="program-slot-note">Invited talk</span></td>
+<td><a class="program-session-link" href="#session-inv06"><span class="program-code">INV06</span><span>Shashi Kant Mishra</span></a><span class="program-slot-note">Invited talk</span></td>
+<td class="program-unavailable">—</td>
+</tr>
+<tr><th scope="row" class="program-time">09:00–10:40</th>
+<td><a class="program-session-link" href="#session-ctr08"><span class="program-code">CTR08</span><span>Optimization and Variational problems</span></a><span class="program-slot-note">5 talks</span></td>
+<td><a class="program-session-link" href="#session-ctr09"><span class="program-code">CTR09</span><span>Operations research and Game theory</span></a><span class="program-slot-note">5 talks</span></td>
+<td class="program-unavailable">—</td>
+</tr>
+<tr><th scope="row" class="program-time">10:40–10:50</th>
+<td colspan="3" class="program-shared">Coffee / tea break</td>
+</tr>
+<tr><th scope="row" class="program-time">10:50–12:30</th>
+<td><a class="program-session-link" href="#session-ctr10"><span class="program-code">CTR10</span><span>Optimization and Variational problems</span></a><span class="program-slot-note">4 talks + reserve</span></td>
+<td><a class="program-session-link" href="#session-ctr11"><span class="program-code">CTR11</span><span>Operations research and Game theory</span></a><span class="program-slot-note">5 talks</span></td>
+<td class="program-unavailable">—</td>
+</tr>
+<tr><th scope="row" class="program-time">12:30–13:30</th>
+<td colspan="3" class="program-shared">Lunch break</td>
+</tr>
+<tr><th scope="row" class="program-time">13:30–14:15</th>
+<td><a class="program-session-link" href="#session-kn3"><span class="program-code">KN3</span><span>Binayak S. Choudhury</span></a><span class="program-slot-note">Keynote lecture</span></td>
+<td class="program-unavailable">—</td>
+<td class="program-unavailable">—</td>
+</tr>
+<tr><th scope="row" class="program-time">14:15–14:45</th>
+<td><a class="program-session-link" href="#session-inv07"><span class="program-code">INV07</span><span>D. R. Sahu</span></a><span class="program-slot-note">Invited talk</span></td>
+<td><a class="program-session-link" href="#session-inv08"><span class="program-code">INV08</span><span>Wutiphol Sintunavarat</span></a><span class="program-slot-note">Invited talk</span></td>
+<td><a class="program-session-link" href="#session-inv09"><span class="program-code">INV09</span><span>Michel De Lara</span></a><span class="program-slot-note">Invited talk</span></td>
+</tr>
+<tr><th scope="row" class="program-time">14:45–16:05</th>
+<td><a class="program-session-link" href="#session-ctr12"><span class="program-code">CTR12</span><span>Differential equations and Mathematical modeling</span></a><span class="program-slot-note">4 talks</span></td>
+<td><a class="program-session-link" href="#session-ctr13"><span class="program-code">CTR13</span><span>Fixed point theory, Nonlinear analysis and Geometry</span></a><span class="program-slot-note">4 talks</span></td>
+<td><a class="program-session-link" href="#session-ctr14"><span class="program-code">CTR14</span><span>Machine learning, Data science and Decision science</span></a><span class="program-slot-note">4 talks</span></td>
+</tr>
+<tr><th scope="row" class="program-time">16:05–16:15</th>
+<td colspan="3" class="program-shared">Coffee / tea break</td>
+</tr>
+<tr><th scope="row" class="program-time">16:15–17:35</th>
+<td><a class="program-session-link" href="#session-ctr15"><span class="program-code">CTR15</span><span>Differential equations and Mathematical modeling</span></a><span class="program-slot-note">4 talks</span></td>
+<td><a class="program-session-link" href="#session-ctr16"><span class="program-code">CTR16</span><span>Misc.</span></a><span class="program-slot-note">4 talks</span></td>
+<td><a class="program-session-link" href="#session-ctr17"><span class="program-code">CTR17</span><span>Machine learning, Data science and Decision science</span></a><span class="program-slot-note">4 talks</span></td>
+</tr>
+<tr><th scope="row" class="program-time">18:00–21:00</th>
+<td colspan="3" class="program-shared">Banquet</td>
+</tr>
+</tbody></table></div><div class="program-session-list">
+<details class="program-session" id="session-inv05" open>
+                    <summary><span class="program-code">INV05</span><span class="program-session-title">Invited talk</span><span class="program-session-meta">08:30–09:00 · Room 1</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a107" class="program-talk" data-program-talk data-session="INV05" data-code="" data-abstract="A107" data-date="2026-12-15" data-room="Room 1" data-presenter="Felipe Lara" data-title="Beyond Monotone Operators: Zarantonello-type Surjectivity Theorems and the Proximal Point Algorithm">
+                        <p class="program-context"><span class="program-code">INV05</span> · 15 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T08:30:00+07:00">08:30</time>–09:00 · A107 <span class="participant-category">Invited</span></p>
+                        <h4>Beyond Monotone Operators: Zarantonello-type Surjectivity Theorems and the Proximal Point Algorithm</h4>
+                        <p class="program-presenter">Felipe Lara</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-inv06" open>
+                    <summary><span class="program-code">INV06</span><span class="program-session-title">Invited talk</span><span class="program-session-meta">08:30–09:00 · Room 2</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a111" class="program-talk" data-program-talk data-session="INV06" data-code="" data-abstract="A111" data-date="2026-12-15" data-room="Room 2" data-presenter="Shashi Kant Mishra" data-title="Solving Mathematical Programs with Vanishing Constraints">
+                        <p class="program-context"><span class="program-code">INV06</span> · 15 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T08:30:00+07:00">08:30</time>–09:00 · A111 <span class="participant-category">Invited</span></p>
+                        <h4>Solving Mathematical Programs with Vanishing Constraints</h4>
+                        <p class="program-presenter">Shashi Kant Mishra</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-ctr08" open>
+                    <summary><span class="program-code">CTR08</span><span class="program-session-title">Optimization and Variational problems</span><span class="program-session-meta">09:00–10:40 · Room 1</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a007" class="program-talk" data-program-talk data-session="CTR08" data-code="OPT-003" data-abstract="A007" data-date="2026-12-15" data-room="Room 1" data-presenter="Feeroz Babu" data-title="Non-Lipschitz inertial method for monotone Inclusion problems">
+                        <p class="program-context"><span class="program-code">CTR08</span> · 15 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T09:00:00+07:00">09:00</time>–09:20 · A007 · OPT-003 <span class="participant-category">Contributed</span></p>
+                        <h4>Non-Lipschitz inertial method for monotone Inclusion problems</h4>
+                        <p class="program-presenter">Feeroz Babu</p>
+                    </li>
+<li id="talk-a011" class="program-talk" data-program-talk data-session="CTR08" data-code="OPT-004" data-abstract="A011" data-date="2026-12-15" data-room="Room 1" data-presenter="Yirga Abebe Belay" data-title="A Projection-Based Adaptive Neurodynamic Approach for Constrained Multi-agent Resource Allocation Problems">
+                        <p class="program-context"><span class="program-code">CTR08</span> · 15 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T09:20:00+07:00">09:20</time>–09:40 · A011 · OPT-004 <span class="participant-category">Contributed</span></p>
+                        <h4>A Projection-Based Adaptive Neurodynamic Approach for Constrained Multi-agent Resource Allocation Problems</h4>
+                        <p class="program-presenter">Yirga Abebe Belay</p>
+                    </li>
+<li id="talk-a012" class="program-talk" data-program-talk data-session="CTR08" data-code="OPT-005" data-abstract="A012" data-date="2026-12-15" data-room="Room 1" data-presenter="Bishal Biswas" data-title="On weakly quasi ε-efficient solutions for a non-smooth multiobjective conic semi-infinite programming problems having vanishing constraints">
+                        <p class="program-context"><span class="program-code">CTR08</span> · 15 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T09:40:00+07:00">09:40</time>–10:00 · A012 · OPT-005 <span class="participant-category">Contributed</span></p>
+                        <h4>On weakly quasi ε-efficient solutions for a non-smooth multiobjective conic semi-infinite programming problems having vanishing constraints</h4>
+                        <p class="program-presenter">Bishal Biswas</p>
+                    </li>
+<li id="talk-a037" class="program-talk" data-program-talk data-session="CTR08" data-code="OPT-006" data-abstract="A037" data-date="2026-12-15" data-room="Room 1" data-presenter="Pakkapon Preechasilp" data-title="Sharp Lipschitz Regularity and Smoothing of the Generalized Fischer–Burmeister Mapping">
+                        <p class="program-context"><span class="program-code">CTR08</span> · 15 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T10:00:00+07:00">10:00</time>–10:20 · A037 · OPT-006 <span class="participant-category">Contributed</span></p>
+                        <h4>Sharp Lipschitz Regularity and Smoothing of the Generalized Fischer–Burmeister Mapping</h4>
+                        <p class="program-presenter">Pakkapon Preechasilp</p>
+                    </li>
+<li id="talk-a060" class="program-talk" data-program-talk data-session="CTR08" data-code="OPT-010" data-abstract="A060" data-date="2026-12-15" data-room="Room 1" data-presenter="Tran Thi Bich Tram" data-title="An extragradient projection neurodynamic model for convex multi-objective optimization">
+                        <p class="program-context"><span class="program-code">CTR08</span> · 15 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T10:20:00+07:00">10:20</time>–10:40 · A060 · OPT-010 <span class="participant-category">Contributed</span></p>
+                        <h4>An extragradient projection neurodynamic model for convex multi-objective optimization</h4>
+                        <p class="program-presenter">Tran Thi Bich Tram</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-ctr09" open>
+                    <summary><span class="program-code">CTR09</span><span class="program-session-title">Operations research and Game theory</span><span class="program-session-meta">09:00–10:40 · Room 2</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a036" class="program-talk" data-program-talk data-session="CTR09" data-code="OR-003" data-abstract="A036" data-date="2026-12-15" data-room="Room 2" data-presenter="Anoop Kumar Pathariya" data-title="Economic and Mathematical Optimization of Renewable Energy Systems Integrated with Thermal Energy Storage">
+                        <p class="program-context"><span class="program-code">CTR09</span> · 15 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T09:00:00+07:00">09:00</time>–09:20 · A036 · OR-003 <span class="participant-category">Contributed</span></p>
+                        <h4>Economic and Mathematical Optimization of Renewable Energy Systems Integrated with Thermal Energy Storage</h4>
+                        <p class="program-presenter">Anoop Kumar Pathariya</p>
+                    </li>
+<li id="talk-a041" class="program-talk" data-program-talk data-session="CTR09" data-code="OR-004" data-abstract="A041" data-date="2026-12-15" data-room="Room 2" data-presenter="Thirumulanathan D" data-title="A Worst-Case Analysis of the Merger Paradox">
+                        <p class="program-context"><span class="program-code">CTR09</span> · 15 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T09:20:00+07:00">09:20</time>–09:40 · A041 · OR-004 <span class="participant-category">Contributed</span></p>
+                        <h4>A Worst-Case Analysis of the Merger Paradox</h4>
+                        <p class="program-presenter">Thirumulanathan D</p>
+                    </li>
+<li id="talk-a054" class="program-talk" data-program-talk data-session="CTR09" data-code="OR-006" data-abstract="A054" data-date="2026-12-15" data-room="Room 2" data-presenter="Seangleng Khe" data-title="A Bilevel Approach to Fair Aggregation in Demand Response">
+                        <p class="program-context"><span class="program-code">CTR09</span> · 15 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T09:40:00+07:00">09:40</time>–10:00 · A054 · OR-006 <span class="participant-category">Contributed</span></p>
+                        <h4>A Bilevel Approach to Fair Aggregation in Demand Response</h4>
+                        <p class="program-presenter">Seangleng Khe</p>
+                    </li>
+<li id="talk-a078" class="program-talk" data-program-talk data-session="CTR09" data-code="OR-008" data-abstract="A078" data-date="2026-12-15" data-room="Room 2" data-presenter="Chakapan Chanpilom" data-title="Entropy-Guided Ant Colony Optimization for 1D Cutting Stock Problem with Product Substitution in Steel Industry">
+                        <p class="program-context"><span class="program-code">CTR09</span> · 15 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T10:00:00+07:00">10:00</time>–10:20 · A078 · OR-008 <span class="participant-category">Contributed</span></p>
+                        <h4>Entropy-Guided Ant Colony Optimization for 1D Cutting Stock Problem with Product Substitution in Steel Industry</h4>
+                        <p class="program-presenter">Chakapan Chanpilom</p>
+                    </li>
+<li id="talk-a085" class="program-talk" data-program-talk data-session="CTR09" data-code="OR-009" data-abstract="A085" data-date="2026-12-15" data-room="Room 2" data-presenter="Gurkirat Wadhwa" data-title="Supplier Encroachment: Co-existence, Elimination, or Market Exit? The Role of Product Essentialness">
+                        <p class="program-context"><span class="program-code">CTR09</span> · 15 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T10:20:00+07:00">10:20</time>–10:40 · A085 · OR-009 <span class="participant-category">Contributed</span></p>
+                        <h4>Supplier Encroachment: Co-existence, Elimination, or Market Exit? The Role of Product Essentialness</h4>
+                        <p class="program-presenter">Gurkirat Wadhwa</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-ctr10" open>
+                    <summary><span class="program-code">CTR10</span><span class="program-session-title">Optimization and Variational problems</span><span class="program-session-meta">10:50–12:30 · Room 1</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a063" class="program-talk" data-program-talk data-session="CTR10" data-code="OPT-011" data-abstract="A063" data-date="2026-12-15" data-room="Room 1" data-presenter="Sagir Ibrahim" data-title="Spectral Riemannian Conjugate Gradient Methods Based on Modified LS and CD Parameters with Applications to Extreme Learning Machines">
+                        <p class="program-context"><span class="program-code">CTR10</span> · 15 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T10:50:00+07:00">10:50</time>–11:10 · A063 · OPT-011 <span class="participant-category">Contributed</span></p>
+                        <h4>Spectral Riemannian Conjugate Gradient Methods Based on Modified LS and CD Parameters with Applications to Extreme Learning Machines</h4>
+                        <p class="program-presenter">Sagir Ibrahim</p>
+                    </li>
+<li id="talk-a066" class="program-talk" data-program-talk data-session="CTR10" data-code="OPT-013" data-abstract="A066" data-date="2026-12-15" data-room="Room 1" data-presenter="Nontawat Eiamniran" data-title="A Safeguarded Proximal Quasi-Newton Method for Nonsmooth Nonconvex Optimization">
+                        <p class="program-context"><span class="program-code">CTR10</span> · 15 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T11:10:00+07:00">11:10</time>–11:30 · A066 · OPT-013 <span class="participant-category">Contributed</span></p>
+                        <h4>A Safeguarded Proximal Quasi-Newton Method for Nonsmooth Nonconvex Optimization</h4>
+                        <p class="program-presenter">Nontawat Eiamniran</p>
+                    </li>
+<li id="talk-a090" class="program-talk" data-program-talk data-session="CTR10" data-code="OPT-017" data-abstract="A090" data-date="2026-12-15" data-room="Room 1" data-presenter="Kobkoon Janngam" data-title="Halpern-type forward–backward method with inertial and correction terms: strong convergence, rates, and image deblurring">
+                        <p class="program-context"><span class="program-code">CTR10</span> · 15 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T11:30:00+07:00">11:30</time>–11:50 · A090 · OPT-017 <span class="participant-category">Contributed</span></p>
+                        <h4>Halpern-type forward–backward method with inertial and correction terms: strong convergence, rates, and image deblurring</h4>
+                        <p class="program-presenter">Kobkoon Janngam</p>
+                    </li>
+<li id="talk-a091" class="program-talk" data-program-talk data-session="CTR10" data-code="OPT-018" data-abstract="A091" data-date="2026-12-15" data-room="Room 1" data-presenter="Jamilu Abubakar" data-title="A Fejér-preserving conjugate direction for the generalized split inclusion problem, with applications to radiation therapy planning and tomato leaf disease classification">
+                        <p class="program-context"><span class="program-code">CTR10</span> · 15 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T11:50:00+07:00">11:50</time>–12:10 · A091 · OPT-018 <span class="participant-category">Contributed</span></p>
+                        <h4>A Fejér-preserving conjugate direction for the generalized split inclusion problem, with applications to radiation therapy planning and tomato leaf disease classification</h4>
+                        <p class="program-presenter">Jamilu Abubakar</p>
+                    </li>
+<li class="program-reserve"><strong>12:10–12:30 · Reserve slot</strong><br>Available for an additional contributed talk.</li>
+</ol></details>
+<details class="program-session" id="session-ctr11" open>
+                    <summary><span class="program-code">CTR11</span><span class="program-session-title">Operations research and Game theory</span><span class="program-session-meta">10:50–12:30 · Room 2</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a094" class="program-talk" data-program-talk data-session="CTR11" data-code="OR-010" data-abstract="A094" data-date="2026-12-15" data-room="Room 2" data-presenter="Om Prakash" data-title="Stochastic Manufacturing System with Rework Process of Defective Items under a Random Machine Breakdown and its Emergency Repair">
+                        <p class="program-context"><span class="program-code">CTR11</span> · 15 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T10:50:00+07:00">10:50</time>–11:10 · A094 · OR-010 <span class="participant-category">Contributed</span></p>
+                        <h4>Stochastic Manufacturing System with Rework Process of Defective Items under a Random Machine Breakdown and its Emergency Repair</h4>
+                        <p class="program-presenter">Om Prakash</p>
+                    </li>
+<li id="talk-a095" class="program-talk" data-program-talk data-session="CTR11" data-code="OR-011" data-abstract="A095" data-date="2026-12-15" data-room="Room 2" data-presenter="Riya Sultana" data-title="Queue or Lounge: System Perspective under Strategic Customer Heterogeneity">
+                        <p class="program-context"><span class="program-code">CTR11</span> · 15 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T11:10:00+07:00">11:10</time>–11:30 · A095 · OR-011 <span class="participant-category">Contributed</span></p>
+                        <h4>Queue or Lounge: System Perspective under Strategic Customer Heterogeneity</h4>
+                        <p class="program-presenter">Riya Sultana</p>
+                    </li>
+<li id="talk-a097" class="program-talk" data-program-talk data-session="CTR11" data-code="OR-012" data-abstract="A097" data-date="2026-12-15" data-room="Room 2" data-presenter="Debanjan Gangopadhyay" data-title="Network Design and Cyclic Routing for Mid-Mile Logistics">
+                        <p class="program-context"><span class="program-code">CTR11</span> · 15 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T11:30:00+07:00">11:30</time>–11:50 · A097 · OR-012 <span class="participant-category">Contributed</span></p>
+                        <h4>Network Design and Cyclic Routing for Mid-Mile Logistics</h4>
+                        <p class="program-presenter">Debanjan Gangopadhyay</p>
+                    </li>
+<li id="talk-a112" class="program-talk" data-program-talk data-session="CTR11" data-code="OR-013" data-abstract="A112" data-date="2026-12-15" data-room="Room 2" data-presenter="Warin Wattanapornprom" data-title="Estimation of Distribution Algorithms versus Genetic Algorithms for Time-Dependent Multi-Day Tourist Trip Design">
+                        <p class="program-context"><span class="program-code">CTR11</span> · 15 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T11:50:00+07:00">11:50</time>–12:10 · A112 · OR-013 <span class="participant-category">Contributed</span></p>
+                        <h4>Estimation of Distribution Algorithms versus Genetic Algorithms for Time-Dependent Multi-Day Tourist Trip Design</h4>
+                        <p class="program-presenter">Warin Wattanapornprom</p>
+                    </li>
+<li id="talk-a113" class="program-talk" data-program-talk data-session="CTR11" data-code="OR-014" data-abstract="A113" data-date="2026-12-15" data-room="Room 2" data-presenter="Thittaporn Ganokratanaa" data-title="Learning Signed Relative Order with ROSE for Permutation Optimization: Evidence from Machine Idle Time in Flow-Shop Scheduling">
+                        <p class="program-context"><span class="program-code">CTR11</span> · 15 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T12:10:00+07:00">12:10</time>–12:30 · A113 · OR-014 <span class="participant-category">Contributed</span></p>
+                        <h4>Learning Signed Relative Order with ROSE for Permutation Optimization: Evidence from Machine Idle Time in Flow-Shop Scheduling</h4>
+                        <p class="program-presenter">Thittaporn Ganokratanaa</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-kn3" open>
+                    <summary><span class="program-code">KN3</span><span class="program-session-title">Keynote lecture</span><span class="program-session-meta">13:30–14:15 · Room 1</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a058" class="program-talk" data-program-talk data-session="KN3" data-code="" data-abstract="A058" data-date="2026-12-15" data-room="Room 1" data-presenter="Binayak S. Choudhury" data-title="A unified framework of optimization problems in Hadamard spaces">
+                        <p class="program-context"><span class="program-code">KN3</span> · 15 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T13:30:00+07:00">13:30</time>–14:15 · A058 <span class="participant-category">Keynote</span></p>
+                        <h4>A unified framework of optimization problems in Hadamard spaces</h4>
+                        <p class="program-presenter">Binayak S. Choudhury</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-inv07" open>
+                    <summary><span class="program-code">INV07</span><span class="program-session-title">Invited talk</span><span class="program-session-meta">14:15–14:45 · Room 1</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a093" class="program-talk" data-program-talk data-session="INV07" data-code="" data-abstract="A093" data-date="2026-12-15" data-room="Room 1" data-presenter="D. R. Sahu" data-title="Acceleration of Computational Methods for Constraint Monotone Inclusion and Constraint Optimization Problems with Applications">
+                        <p class="program-context"><span class="program-code">INV07</span> · 15 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T14:15:00+07:00">14:15</time>–14:45 · A093 <span class="participant-category">Invited</span></p>
+                        <h4>Acceleration of Computational Methods for Constraint Monotone Inclusion and Constraint Optimization Problems with Applications</h4>
+                        <p class="program-presenter">D. R. Sahu</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-inv08" open>
+                    <summary><span class="program-code">INV08</span><span class="program-session-title">Invited talk</span><span class="program-session-meta">14:15–14:45 · Room 2</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-inv08" class="program-talk" data-program-talk data-session="INV08" data-code="" data-abstract="" data-date="2026-12-15" data-room="Room 2" data-presenter="Wutiphol Sintunavarat" data-title="Talk title to be announced">
+                        <p class="program-context"><span class="program-code">INV08</span> · 15 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T14:15:00+07:00">14:15</time>–14:45 <span class="participant-category">Invited</span></p>
+                        <h4>Talk title to be announced</h4>
+                        <p class="program-presenter">Wutiphol Sintunavarat</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-inv09" open>
+                    <summary><span class="program-code">INV09</span><span class="program-session-title">Invited talk</span><span class="program-session-meta">14:15–14:45 · Room 3</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a100" class="program-talk" data-program-talk data-session="INV09" data-code="" data-abstract="A100" data-date="2026-12-15" data-room="Room 3" data-presenter="Michel De Lara" data-title="Learning with Representation Losses">
+                        <p class="program-context"><span class="program-code">INV09</span> · 15 December · Room 3</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T14:15:00+07:00">14:15</time>–14:45 · A100 <span class="participant-category">Invited</span></p>
+                        <h4>Learning with Representation Losses</h4>
+                        <p class="program-presenter">Michel De Lara</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-ctr12" open>
+                    <summary><span class="program-code">CTR12</span><span class="program-session-title">Differential equations and Mathematical modeling</span><span class="program-session-meta">14:45–16:05 · Room 1</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a017" class="program-talk" data-program-talk data-session="CTR12" data-code="DE-001" data-abstract="A017" data-date="2026-12-15" data-room="Room 1" data-presenter="Benard Alechenu" data-title="Development of Five-Step Two-Point Optimized Hybrid Method Based on Volterra Integral Equation of the Second Kind to Solve Third-Order Initial Value Problems">
+                        <p class="program-context"><span class="program-code">CTR12</span> · 15 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T14:45:00+07:00">14:45</time>–15:05 · A017 · DE-001 <span class="participant-category">Contributed</span></p>
+                        <h4>Development of Five-Step Two-Point Optimized Hybrid Method Based on Volterra Integral Equation of the Second Kind to Solve Third-Order Initial Value Problems</h4>
+                        <p class="program-presenter">Benard Alechenu</p>
+                    </li>
+<li id="talk-a021" class="program-talk" data-program-talk data-session="CTR12" data-code="DE-002" data-abstract="A021" data-date="2026-12-15" data-room="Room 1" data-presenter="Muhammad Zaid" data-title="High-order Haar wavelet based numerical algorithm for system of nonlinear singular Emden–Fowler equations arising in astrophysics">
+                        <p class="program-context"><span class="program-code">CTR12</span> · 15 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T15:05:00+07:00">15:05</time>–15:25 · A021 · DE-002 <span class="participant-category">Contributed</span></p>
+                        <h4>High-order Haar wavelet based numerical algorithm for system of nonlinear singular Emden–Fowler equations arising in astrophysics</h4>
+                        <p class="program-presenter">Muhammad Zaid</p>
+                    </li>
+<li id="talk-a044" class="program-talk" data-program-talk data-session="CTR12" data-code="DE-004" data-abstract="A044" data-date="2026-12-15" data-room="Room 1" data-presenter="Ramsha Shafqat" data-title="Global Convergence and Dynamic Preservation in a Nonstandard Finite-Difference Formulation of the SIR Model with Holling Type-III Incidence">
+                        <p class="program-context"><span class="program-code">CTR12</span> · 15 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T15:25:00+07:00">15:25</time>–15:45 · A044 · DE-004 <span class="participant-category">Contributed</span></p>
+                        <h4>Global Convergence and Dynamic Preservation in a Nonstandard Finite-Difference Formulation of the SIR Model with Holling Type-III Incidence</h4>
+                        <p class="program-presenter">Ramsha Shafqat</p>
+                    </li>
+<li id="talk-a067" class="program-talk" data-program-talk data-session="CTR12" data-code="DE-006" data-abstract="A067" data-date="2026-12-15" data-room="Room 1" data-presenter="Umar Muhammad Ali" data-title="Exploring New Optical Soliton Solutions of the Aigerim–Ratbay–Shyngys Equation Using Improved Analytical Techniques">
+                        <p class="program-context"><span class="program-code">CTR12</span> · 15 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T15:45:00+07:00">15:45</time>–16:05 · A067 · DE-006 <span class="participant-category">Contributed</span></p>
+                        <h4>Exploring New Optical Soliton Solutions of the Aigerim–Ratbay–Shyngys Equation Using Improved Analytical Techniques</h4>
+                        <p class="program-presenter">Umar Muhammad Ali</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-ctr13" open>
+                    <summary><span class="program-code">CTR13</span><span class="program-session-title">Fixed point theory, Nonlinear analysis and Geometry</span><span class="program-session-meta">14:45–16:05 · Room 2</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a004" class="program-talk" data-program-talk data-session="CTR13" data-code="FP-001" data-abstract="A004" data-date="2026-12-15" data-room="Room 2" data-presenter="Mohd. Sharique" data-title="A Unified Resolvent–Yosida–Cayley Approach to Systems of Nonlinear Variational Inclusions in q-Uniformly Smooth Banach Spaces">
+                        <p class="program-context"><span class="program-code">CTR13</span> · 15 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T14:45:00+07:00">14:45</time>–15:05 · A004 · FP-001 <span class="participant-category">Contributed</span></p>
+                        <h4>A Unified Resolvent–Yosida–Cayley Approach to Systems of Nonlinear Variational Inclusions in q-Uniformly Smooth Banach Spaces</h4>
+                        <p class="program-presenter">Mohd. Sharique</p>
+                    </li>
+<li id="talk-a005" class="program-talk" data-program-talk data-session="CTR13" data-code="FP-002" data-abstract="A005" data-date="2026-12-15" data-room="Room 2" data-presenter="Jeetendrasingh Maan" data-title="The Index Whittaker Transform: Convolution Structures, Function Spaces, and Pseudo-Differential Operators">
+                        <p class="program-context"><span class="program-code">CTR13</span> · 15 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T15:05:00+07:00">15:05</time>–15:25 · A005 · FP-002 <span class="participant-category">Contributed</span></p>
+                        <h4>The Index Whittaker Transform: Convolution Structures, Function Spaces, and Pseudo-Differential Operators</h4>
+                        <p class="program-presenter">Jeetendrasingh Maan</p>
+                    </li>
+<li id="talk-a008" class="program-talk" data-program-talk data-session="CTR13" data-code="FP-003" data-abstract="A008" data-date="2026-12-15" data-room="Room 2" data-presenter="Praveen Kumar" data-title="Continuous Wavelet Analysis Associated with the Kontorovich-Lebedev-Clifford Transform">
+                        <p class="program-context"><span class="program-code">CTR13</span> · 15 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T15:25:00+07:00">15:25</time>–15:45 · A008 · FP-003 <span class="participant-category">Contributed</span></p>
+                        <h4>Continuous Wavelet Analysis Associated with the Kontorovich-Lebedev-Clifford Transform</h4>
+                        <p class="program-presenter">Praveen Kumar</p>
+                    </li>
+<li id="talk-a014" class="program-talk" data-program-talk data-session="CTR13" data-code="FP-004" data-abstract="A014" data-date="2026-12-15" data-room="Room 2" data-presenter="Takuto Kajimura" data-title="Spherically vicinal mappings and a fixed point theorem on Banach spheres">
+                        <p class="program-context"><span class="program-code">CTR13</span> · 15 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T15:45:00+07:00">15:45</time>–16:05 · A014 · FP-004 <span class="participant-category">Contributed</span></p>
+                        <h4>Spherically vicinal mappings and a fixed point theorem on Banach spheres</h4>
+                        <p class="program-presenter">Takuto Kajimura</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-ctr14" open>
+                    <summary><span class="program-code">CTR14</span><span class="program-session-title">Machine learning, Data science and Decision science</span><span class="program-session-meta">14:45–16:05 · Room 3</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a034" class="program-talk" data-program-talk data-session="CTR14" data-code="ML-005" data-abstract="A034" data-date="2026-12-15" data-room="Room 3" data-presenter="Muhammad Waqar" data-title="Physics-Informed Neural Networks for Internal and External Incompressible Flows: Lid-Driven Cavity at Re=5000 and Flow Past a Circular Cylinder at Re=40">
+                        <p class="program-context"><span class="program-code">CTR14</span> · 15 December · Room 3</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T14:45:00+07:00">14:45</time>–15:05 · A034 · ML-005 <span class="participant-category">Contributed</span></p>
+                        <h4>Physics-Informed Neural Networks for Internal and External Incompressible Flows: Lid-Driven Cavity at Re=5000 and Flow Past a Circular Cylinder at Re=40</h4>
+                        <p class="program-presenter">Muhammad Waqar</p>
+                    </li>
+<li id="talk-a038" class="program-talk" data-program-talk data-session="CTR14" data-code="ML-006" data-abstract="A038" data-date="2026-12-15" data-room="Room 3" data-presenter="Sushil Kumar" data-title="A Mathematical Approach to develop AI model for Emotion Recognition">
+                        <p class="program-context"><span class="program-code">CTR14</span> · 15 December · Room 3</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T15:05:00+07:00">15:05</time>–15:25 · A038 · ML-006 <span class="participant-category">Contributed</span></p>
+                        <h4>A Mathematical Approach to develop AI model for Emotion Recognition</h4>
+                        <p class="program-presenter">Sushil Kumar</p>
+                    </li>
+<li id="talk-a056" class="program-talk" data-program-talk data-session="CTR14" data-code="ML-007" data-abstract="A056" data-date="2026-12-15" data-room="Room 3" data-presenter="Aphinan Photun" data-title="A Neurodynamic Framework for Multi-View Probability Fusion in Glaucoma Classification">
+                        <p class="program-context"><span class="program-code">CTR14</span> · 15 December · Room 3</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T15:25:00+07:00">15:25</time>–15:45 · A056 · ML-007 <span class="participant-category">Contributed</span></p>
+                        <h4>A Neurodynamic Framework for Multi-View Probability Fusion in Glaucoma Classification</h4>
+                        <p class="program-presenter">Aphinan Photun</p>
+                    </li>
+<li id="talk-a059" class="program-talk" data-program-talk data-session="CTR14" data-code="ML-008" data-abstract="A059" data-date="2026-12-15" data-room="Room 3" data-presenter="Wachirapong Jirakitpuwapat" data-title="Bayesian Optimized Multitask Deep Learning for Blight Disease Analysis in Major Thai Crops">
+                        <p class="program-context"><span class="program-code">CTR14</span> · 15 December · Room 3</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T15:45:00+07:00">15:45</time>–16:05 · A059 · ML-008 <span class="participant-category">Contributed</span></p>
+                        <h4>Bayesian Optimized Multitask Deep Learning for Blight Disease Analysis in Major Thai Crops</h4>
+                        <p class="program-presenter">Wachirapong Jirakitpuwapat</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-ctr15" open>
+                    <summary><span class="program-code">CTR15</span><span class="program-session-title">Differential equations and Mathematical modeling</span><span class="program-session-meta">16:15–17:35 · Room 1</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a070" class="program-talk" data-program-talk data-session="CTR15" data-code="DE-008" data-abstract="A070" data-date="2026-12-15" data-room="Room 1" data-presenter="Sugra Idrees" data-title="Composition Sensitivity and Coupled Transport of a Maxwell Ternary Hybrid Nanofluid over a Radially Stretching Disk with Cattaneo–Christov Double Diffusion">
+                        <p class="program-context"><span class="program-code">CTR15</span> · 15 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T16:15:00+07:00">16:15</time>–16:35 · A070 · DE-008 <span class="participant-category">Contributed</span></p>
+                        <h4>Composition Sensitivity and Coupled Transport of a Maxwell Ternary Hybrid Nanofluid over a Radially Stretching Disk with Cattaneo–Christov Double Diffusion</h4>
+                        <p class="program-presenter">Sugra Idrees</p>
+                    </li>
+<li id="talk-a071" class="program-talk" data-program-talk data-session="CTR15" data-code="DE-009" data-abstract="A071" data-date="2026-12-15" data-room="Room 1" data-presenter="Puskar R. Pokhrel" data-title="Numerical Decomposition and Dynamic Analysis of Mixture Mass Flows Model">
+                        <p class="program-context"><span class="program-code">CTR15</span> · 15 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T16:35:00+07:00">16:35</time>–16:55 · A071 · DE-009 <span class="participant-category">Contributed</span></p>
+                        <h4>Numerical Decomposition and Dynamic Analysis of Mixture Mass Flows Model</h4>
+                        <p class="program-presenter">Puskar R. Pokhrel</p>
+                    </li>
+<li id="talk-a072" class="program-talk" data-program-talk data-session="CTR15" data-code="DE-010" data-abstract="A072" data-date="2026-12-15" data-room="Room 1" data-presenter="Bhabani Lamsal" data-title="Derivation and Numerical Analysis of Depth-Averaged Equations for Mixture Mass Flows">
+                        <p class="program-context"><span class="program-code">CTR15</span> · 15 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T16:55:00+07:00">16:55</time>–17:15 · A072 · DE-010 <span class="participant-category">Contributed</span></p>
+                        <h4>Derivation and Numerical Analysis of Depth-Averaged Equations for Mixture Mass Flows</h4>
+                        <p class="program-presenter">Bhabani Lamsal</p>
+                    </li>
+<li id="talk-a110" class="program-talk" data-program-talk data-session="CTR15" data-code="DE-013" data-abstract="A110" data-date="2026-12-15" data-room="Room 1" data-presenter="Abhishek Kumar Singh" data-title="A Numerical approach to deal Nonlinear Systems of Fractional Differential Equations via Hermite Wavelet Techniques">
+                        <p class="program-context"><span class="program-code">CTR15</span> · 15 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T17:15:00+07:00">17:15</time>–17:35 · A110 · DE-013 <span class="participant-category">Contributed</span></p>
+                        <h4>A Numerical approach to deal Nonlinear Systems of Fractional Differential Equations via Hermite Wavelet Techniques</h4>
+                        <p class="program-presenter">Abhishek Kumar Singh</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-ctr16" open>
+                    <summary><span class="program-code">CTR16</span><span class="program-session-title">Misc.</span><span class="program-session-meta">16:15–17:35 · Room 2</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a024" class="program-talk" data-program-talk data-session="CTR16" data-code="MISC-001" data-abstract="A024" data-date="2026-12-15" data-room="Room 2" data-presenter="Rifaqat Ali" data-title="Blockchain-Based Authentication for Secure Robotic Telesurgery over the Tactile Internet">
+                        <p class="program-context"><span class="program-code">CTR16</span> · 15 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T16:15:00+07:00">16:15</time>–16:35 · A024 · MISC-001 <span class="participant-category">Contributed</span></p>
+                        <h4>Blockchain-Based Authentication for Secure Robotic Telesurgery over the Tactile Internet</h4>
+                        <p class="program-presenter">Rifaqat Ali</p>
+                    </li>
+<li id="talk-a027" class="program-talk" data-program-talk data-session="CTR16" data-code="MISC-002" data-abstract="A027" data-date="2026-12-15" data-room="Room 2" data-presenter="Pawaton Kaemawichanurat" data-title="Kempe Swaps in Graph Coloring Games">
+                        <p class="program-context"><span class="program-code">CTR16</span> · 15 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T16:35:00+07:00">16:35</time>–16:55 · A027 · MISC-002 <span class="participant-category">Contributed</span></p>
+                        <h4>Kempe Swaps in Graph Coloring Games</h4>
+                        <p class="program-presenter">Pawaton Kaemawichanurat</p>
+                    </li>
+<li id="talk-a057" class="program-talk" data-program-talk data-session="CTR16" data-code="MISC-003" data-abstract="A057" data-date="2026-12-15" data-room="Room 2" data-presenter="Kasim Sagir" data-title="Spectral Analysis and Energy Hierarchy of Edge-Subdivision Signed Graphs">
+                        <p class="program-context"><span class="program-code">CTR16</span> · 15 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T16:55:00+07:00">16:55</time>–17:15 · A057 · MISC-003 <span class="participant-category">Contributed</span></p>
+                        <h4>Spectral Analysis and Energy Hierarchy of Edge-Subdivision Signed Graphs</h4>
+                        <p class="program-presenter">Kasim Sagir</p>
+                    </li>
+<li id="talk-a069" class="program-talk" data-program-talk data-session="CTR16" data-code="MISC-004" data-abstract="A069" data-date="2026-12-15" data-room="Room 2" data-presenter="Muhammad Navid Alam" data-title="Fuzzy Degree-Based Topological Indices and Entropy Measures of Carbon Nanocone Graphs with Structural Optimization Applications">
+                        <p class="program-context"><span class="program-code">CTR16</span> · 15 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T17:15:00+07:00">17:15</time>–17:35 · A069 · MISC-004 <span class="participant-category">Contributed</span></p>
+                        <h4>Fuzzy Degree-Based Topological Indices and Entropy Measures of Carbon Nanocone Graphs with Structural Optimization Applications</h4>
+                        <p class="program-presenter">Muhammad Navid Alam</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-ctr17" open>
+                    <summary><span class="program-code">CTR17</span><span class="program-session-title">Machine learning, Data science and Decision science</span><span class="program-session-meta">16:15–17:35 · Room 3</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a062" class="program-talk" data-program-talk data-session="CTR17" data-code="ML-009" data-abstract="A062" data-date="2026-12-15" data-room="Room 3" data-presenter="Ammar Sani Ibrahim" data-title="A Conservation-Aware Physics-Informed Neural Network for Steady-State Ion-Coupled Drift–Diffusion–Poisson Modeling of Perovskite Devices">
+                        <p class="program-context"><span class="program-code">CTR17</span> · 15 December · Room 3</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T16:15:00+07:00">16:15</time>–16:35 · A062 · ML-009 <span class="participant-category">Contributed</span></p>
+                        <h4>A Conservation-Aware Physics-Informed Neural Network for Steady-State Ion-Coupled Drift–Diffusion–Poisson Modeling of Perovskite Devices</h4>
+                        <p class="program-presenter">Ammar Sani Ibrahim</p>
+                    </li>
+<li id="talk-a073" class="program-talk" data-program-talk data-session="CTR17" data-code="ML-010" data-abstract="A073" data-date="2026-12-15" data-room="Room 3" data-presenter="Pintu Kumar" data-title="LENS: Entropy-Based Noisy Label Detection Algorithm for Robust Graph Machine Learning">
+                        <p class="program-context"><span class="program-code">CTR17</span> · 15 December · Room 3</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T16:35:00+07:00">16:35</time>–16:55 · A073 · ML-010 <span class="participant-category">Contributed</span></p>
+                        <h4>LENS: Entropy-Based Noisy Label Detection Algorithm for Robust Graph Machine Learning</h4>
+                        <p class="program-presenter">Pintu Kumar</p>
+                    </li>
+<li id="talk-a075" class="program-talk" data-program-talk data-session="CTR17" data-code="ML-011" data-abstract="A075" data-date="2026-12-15" data-room="Room 3" data-presenter="Thach Tan Phong" data-title="Active-set Newton methods for trapezoid-smoothed generalized pinball SVMs">
+                        <p class="program-context"><span class="program-code">CTR17</span> · 15 December · Room 3</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T16:55:00+07:00">16:55</time>–17:15 · A075 · ML-011 <span class="participant-category">Contributed</span></p>
+                        <h4>Active-set Newton methods for trapezoid-smoothed generalized pinball SVMs</h4>
+                        <p class="program-presenter">Thach Tan Phong</p>
+                    </li>
+<li id="talk-a082" class="program-talk" data-program-talk data-session="CTR17" data-code="ML-013" data-abstract="A082" data-date="2026-12-15" data-room="Room 3" data-presenter="Hamza Naveed" data-title="A novel approach using interval-valued q-rung orthopair fuzzy soft sets and Aczél-Alsina operators: Application in evaluation of artificial intelligence-based computing techniques">
+                        <p class="program-context"><span class="program-code">CTR17</span> · 15 December · Room 3</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-15T17:15:00+07:00">17:15</time>–17:35 · A082 · ML-013 <span class="participant-category">Contributed</span></p>
+                        <h4>A novel approach using interval-valued q-rung orthopair fuzzy soft sets and Aczél-Alsina operators: Application in evaluation of artificial intelligence-based computing techniques</h4>
+                        <p class="program-presenter">Hamza Naveed</p>
+                    </li>
+</ol></details>
+</div></section>
+            <section class="program-day" id="day-16" aria-labelledby="day-heading-16">
+                <h2 id="day-heading-16">16 December 2026</h2>
+                <div class="program-table-wrapper" role="region" aria-label="16 December timetable" tabindex="0">
+                    <table class="program-timetable">
+                        <caption>Timetable for 16 December 2026</caption>
+                        <colgroup><col class="program-time-column"><col><col><col></colgroup>
+                        <thead><tr><th scope="col">Time</th><th scope="col">Room 1</th><th scope="col">Room 2</th><th scope="col">Room 3</th></tr></thead><tbody>
+<tr><th scope="row" class="program-time">08:45–09:30</th>
+<td><a class="program-session-link" href="#session-kn4"><span class="program-code">KN4</span><span>Poom Kumam</span></a><span class="program-slot-note">Keynote lecture</span></td>
+<td class="program-unavailable">—</td>
+<td class="program-unavailable">—</td>
+</tr>
+<tr><th scope="row" class="program-time">09:30–10:00</th>
+<td><a class="program-session-link" href="#session-inv10"><span class="program-code">INV10</span><span>Santosh Kumar</span></a><span class="program-slot-note">Invited talk</span></td>
+<td><a class="program-session-link" href="#session-inv11"><span class="program-code">INV11</span><span>Lakshmi Kanta Dey</span></a><span class="program-slot-note">Invited talk</span></td>
+<td class="program-unavailable">—</td>
+</tr>
+<tr><th scope="row" class="program-time">10:00–11:00</th>
+<td><a class="program-session-link" href="#session-ctr18"><span class="program-code">CTR18</span><span>Fixed point theory, Nonlinear analysis and Geometry</span></a><span class="program-slot-note">3 talks</span></td>
+<td><a class="program-session-link" href="#session-ctr19"><span class="program-code">CTR19</span><span>Machine learning, Data science and Decision science</span></a><span class="program-slot-note">3 talks</span></td>
+<td class="program-unavailable">—</td>
+</tr>
+<tr><th scope="row" class="program-time">11:00–11:10</th>
+<td colspan="3" class="program-shared">Coffee / tea break</td>
+</tr>
+<tr><th scope="row" class="program-time">11:10–12:10</th>
+<td><a class="program-session-link" href="#session-ctr20"><span class="program-code">CTR20</span><span>Fixed point theory, Nonlinear analysis and Geometry</span></a><span class="program-slot-note">3 talks</span></td>
+<td><a class="program-session-link" href="#session-ctr21"><span class="program-code">CTR21</span><span>Misc.</span></a><span class="program-slot-note">3 talks</span></td>
+<td class="program-unavailable">—</td>
+</tr>
+</tbody></table></div><div class="program-session-list">
+<details class="program-session" id="session-kn4" open>
+                    <summary><span class="program-code">KN4</span><span class="program-session-title">Keynote lecture</span><span class="program-session-meta">08:45–09:30 · Room 1</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-kn4" class="program-talk" data-program-talk data-session="KN4" data-code="" data-abstract="" data-date="2026-12-16" data-room="Room 1" data-presenter="Poom Kumam" data-title="Talk title to be announced">
+                        <p class="program-context"><span class="program-code">KN4</span> · 16 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-16T08:45:00+07:00">08:45</time>–09:30 <span class="participant-category">Keynote</span></p>
+                        <h4>Talk title to be announced</h4>
+                        <p class="program-presenter">Poom Kumam</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-inv10" open>
+                    <summary><span class="program-code">INV10</span><span class="program-session-title">Invited talk</span><span class="program-session-meta">09:30–10:00 · Room 1</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a009" class="program-talk" data-program-talk data-session="INV10" data-code="" data-abstract="A009" data-date="2026-12-16" data-room="Room 1" data-presenter="Santosh Kumar" data-title="A Brief Introduction of Generalised Metric Spaces and It&#x27;s Applications">
+                        <p class="program-context"><span class="program-code">INV10</span> · 16 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-16T09:30:00+07:00">09:30</time>–10:00 · A009 <span class="participant-category">Invited</span></p>
+                        <h4>A Brief Introduction of Generalised Metric Spaces and It&#x27;s Applications</h4>
+                        <p class="program-presenter">Santosh Kumar</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-inv11" open>
+                    <summary><span class="program-code">INV11</span><span class="program-session-title">Invited talk</span><span class="program-session-meta">09:30–10:00 · Room 2</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a106" class="program-talk" data-program-talk data-session="INV11" data-code="" data-abstract="A106" data-date="2026-12-16" data-room="Room 2" data-presenter="Lakshmi Kanta Dey" data-title="From Classical Riemann Integration to the Lebesgue Property of Banach Spaces">
+                        <p class="program-context"><span class="program-code">INV11</span> · 16 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-16T09:30:00+07:00">09:30</time>–10:00 · A106 <span class="participant-category">Invited</span></p>
+                        <h4>From Classical Riemann Integration to the Lebesgue Property of Banach Spaces</h4>
+                        <p class="program-presenter">Lakshmi Kanta Dey</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-ctr18" open>
+                    <summary><span class="program-code">CTR18</span><span class="program-session-title">Fixed point theory, Nonlinear analysis and Geometry</span><span class="program-session-meta">10:00–11:00 · Room 1</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a039" class="program-talk" data-program-talk data-session="CTR18" data-code="FP-005" data-abstract="A039" data-date="2026-12-16" data-room="Room 1" data-presenter="Zammad Ali" data-title="Componentwise Centre-Radius Hadamard Gronwall Inequalities and Applications to Interval-Valued Optimisation">
+                        <p class="program-context"><span class="program-code">CTR18</span> · 16 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-16T10:00:00+07:00">10:00</time>–10:20 · A039 · FP-005 <span class="participant-category">Contributed</span></p>
+                        <h4>Componentwise Centre-Radius Hadamard Gronwall Inequalities and Applications to Interval-Valued Optimisation</h4>
+                        <p class="program-presenter">Zammad Ali</p>
+                    </li>
+<li id="talk-a061" class="program-talk" data-program-talk data-session="CTR18" data-code="FP-008" data-abstract="A061" data-date="2026-12-16" data-room="Room 1" data-presenter="Hafsa Rashid" data-title="Hypergeometric Ostrowski-Type Inequalities for Power-Weighted Optimisation">
+                        <p class="program-context"><span class="program-code">CTR18</span> · 16 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-16T10:20:00+07:00">10:20</time>–10:40 · A061 · FP-008 <span class="participant-category">Contributed</span></p>
+                        <h4>Hypergeometric Ostrowski-Type Inequalities for Power-Weighted Optimisation</h4>
+                        <p class="program-presenter">Hafsa Rashid</p>
+                    </li>
+<li id="talk-a065" class="program-talk" data-program-talk data-session="CTR18" data-code="FP-009" data-abstract="A065" data-date="2026-12-16" data-room="Room 1" data-presenter="Kapil Kumar Verma" data-title="Improved Chen–Tripathi inequality for warped product submanifolds">
+                        <p class="program-context"><span class="program-code">CTR18</span> · 16 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-16T10:40:00+07:00">10:40</time>–11:00 · A065 · FP-009 <span class="participant-category">Contributed</span></p>
+                        <h4>Improved Chen–Tripathi inequality for warped product submanifolds</h4>
+                        <p class="program-presenter">Kapil Kumar Verma</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-ctr19" open>
+                    <summary><span class="program-code">CTR19</span><span class="program-session-title">Machine learning, Data science and Decision science</span><span class="program-session-meta">10:00–11:00 · Room 2</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a086" class="program-talk" data-program-talk data-session="CTR19" data-code="ML-014" data-abstract="A086" data-date="2026-12-16" data-room="Room 2" data-presenter="Narendra Kumawat" data-title="An Adaptive Wavelet-Enhanced Physics-Informed Neural Network for Solving Fractional Partial Differential Equations">
+                        <p class="program-context"><span class="program-code">CTR19</span> · 16 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-16T10:00:00+07:00">10:00</time>–10:20 · A086 · ML-014 <span class="participant-category">Contributed</span></p>
+                        <h4>An Adaptive Wavelet-Enhanced Physics-Informed Neural Network for Solving Fractional Partial Differential Equations</h4>
+                        <p class="program-presenter">Narendra Kumawat</p>
+                    </li>
+<li id="talk-a087" class="program-talk" data-program-talk data-session="CTR19" data-code="ML-015" data-abstract="A087" data-date="2026-12-16" data-room="Room 2" data-presenter="Pooja Jangir" data-title="Adaptive Physics-Informed Neural Network for Variable-Order Fractional Reaction–Diffusion Epidemic Models">
+                        <p class="program-context"><span class="program-code">CTR19</span> · 16 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-16T10:20:00+07:00">10:20</time>–10:40 · A087 · ML-015 <span class="participant-category">Contributed</span></p>
+                        <h4>Adaptive Physics-Informed Neural Network for Variable-Order Fractional Reaction–Diffusion Epidemic Models</h4>
+                        <p class="program-presenter">Pooja Jangir</p>
+                    </li>
+<li id="talk-a098" class="program-talk" data-program-talk data-session="CTR19" data-code="ML-017" data-abstract="A098" data-date="2026-12-16" data-room="Room 2" data-presenter="Saalam Ali" data-title="Aczél–Alsina Aggregation and CIMAS–MABAC under q-Rung Orthopair Fuzzy Z-Numbers for Hydropower Project Prioritization">
+                        <p class="program-context"><span class="program-code">CTR19</span> · 16 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-16T10:40:00+07:00">10:40</time>–11:00 · A098 · ML-017 <span class="participant-category">Contributed</span></p>
+                        <h4>Aczél–Alsina Aggregation and CIMAS–MABAC under q-Rung Orthopair Fuzzy Z-Numbers for Hydropower Project Prioritization</h4>
+                        <p class="program-presenter">Saalam Ali</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-ctr20" open>
+                    <summary><span class="program-code">CTR20</span><span class="program-session-title">Fixed point theory, Nonlinear analysis and Geometry</span><span class="program-session-meta">11:10–12:10 · Room 1</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a076" class="program-talk" data-program-talk data-session="CTR20" data-code="FP-010" data-abstract="A076" data-date="2026-12-16" data-room="Room 1" data-presenter="Jaya Rani" data-title="Trans-para-Sasakian space forms">
+                        <p class="program-context"><span class="program-code">CTR20</span> · 16 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-16T11:10:00+07:00">11:10</time>–11:30 · A076 · FP-010 <span class="participant-category">Contributed</span></p>
+                        <h4>Trans-para-Sasakian space forms</h4>
+                        <p class="program-presenter">Jaya Rani</p>
+                    </li>
+<li id="talk-a079" class="program-talk" data-program-talk data-session="CTR20" data-code="FP-011" data-abstract="A079" data-date="2026-12-16" data-room="Room 1" data-presenter="Ayush Choubey" data-title="Riemann–Christoffel curvature tensor field of the product of two complex two-plane Grassmannians">
+                        <p class="program-context"><span class="program-code">CTR20</span> · 16 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-16T11:30:00+07:00">11:30</time>–11:50 · A079 · FP-011 <span class="participant-category">Contributed</span></p>
+                        <h4>Riemann–Christoffel curvature tensor field of the product of two complex two-plane Grassmannians</h4>
+                        <p class="program-presenter">Ayush Choubey</p>
+                    </li>
+<li id="talk-a108" class="program-talk" data-program-talk data-session="CTR20" data-code="FP-013" data-abstract="A108" data-date="2026-12-16" data-room="Room 1" data-presenter="Ashis Bera" data-title="Existence and Convergence of Fixed Points for Enriched Reich--Suzuki Type Non-expansive Mappings in Hyperbolic Spaces with Applications to Absolute Value and Fredholm Integral Equations">
+                        <p class="program-context"><span class="program-code">CTR20</span> · 16 December · Room 1</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-16T11:50:00+07:00">11:50</time>–12:10 · A108 · FP-013 <span class="participant-category">Contributed</span></p>
+                        <h4>Existence and Convergence of Fixed Points for Enriched Reich--Suzuki Type Non-expansive Mappings in Hyperbolic Spaces with Applications to Absolute Value and Fredholm Integral Equations</h4>
+                        <p class="program-presenter">Ashis Bera</p>
+                    </li>
+</ol></details>
+<details class="program-session" id="session-ctr21" open>
+                    <summary><span class="program-code">CTR21</span><span class="program-session-title">Misc.</span><span class="program-session-meta">11:10–12:10 · Room 2</span></summary>
+                    <ol class="program-talk-list">
+<li id="talk-a083" class="program-talk" data-program-talk data-session="CTR21" data-code="MISC-005" data-abstract="A083" data-date="2026-12-16" data-room="Room 2" data-presenter="Paparb Hatnumsap" data-title="On the Construction of Graphs with Given Integer Eigenvalues">
+                        <p class="program-context"><span class="program-code">CTR21</span> · 16 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-16T11:10:00+07:00">11:10</time>–11:30 · A083 · MISC-005 <span class="participant-category">Contributed</span></p>
+                        <h4>On the Construction of Graphs with Given Integer Eigenvalues</h4>
+                        <p class="program-presenter">Paparb Hatnumsap</p>
+                    </li>
+<li id="talk-a109" class="program-talk" data-program-talk data-session="CTR21" data-code="MISC-006" data-abstract="A109" data-date="2026-12-16" data-room="Room 2" data-presenter="Sutthipong Sindee" data-title="A Probability Space for a Generalized Collatz Problem">
+                        <p class="program-context"><span class="program-code">CTR21</span> · 16 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-16T11:30:00+07:00">11:30</time>–11:50 · A109 · MISC-006 <span class="participant-category">Contributed</span></p>
+                        <h4>A Probability Space for a Generalized Collatz Problem</h4>
+                        <p class="program-presenter">Sutthipong Sindee</p>
+                    </li>
+<li id="talk-a115" class="program-talk" data-program-talk data-session="CTR21" data-code="MISC-007" data-abstract="A115" data-date="2026-12-16" data-room="Room 2" data-presenter="Ram Prasad Nepal" data-title="Bridging Policy and Practice: Analysis of Student Perspectives on NEP 2020 and SDG 4 Targets in Secondary and Tertiary Education in Sikkim, India">
+                        <p class="program-context"><span class="program-code">CTR21</span> · 16 December · Room 2</p>
+                        <p class="program-talk-meta"><time datetime="2026-12-16T11:50:00+07:00">11:50</time>–12:10 · A115 · MISC-007 <span class="participant-category">Contributed</span></p>
+                        <h4>Bridging Policy and Practice: Analysis of Student Perspectives on NEP 2020 and SDG 4 Targets in Secondary and Tertiary Education in Sikkim, India</h4>
+                        <p class="program-presenter">Ram Prasad Nepal</p>
+                    </li>
+</ol></details>
+</div></section>
+        </section>
+        <section id="program-interactive" aria-labelledby="interactive-heading" hidden>
+            <h3 id="interactive-heading">Find a talk</h3>
+            <form class="participants-filters program-filters" id="program-filters" role="search">
+                <div class="participant-search">
+                    <label for="program-search">Search the program</label>
+                    <input type="search" id="program-search" placeholder="Code, talk title or presenter" autocomplete="off" aria-describedby="program-search-hint">
+                </div>
+                <div><label for="program-day">Day</label><select id="program-day">
+                    <option value="">All days</option><option value="2026-12-14">14 December</option><option value="2026-12-15">15 December</option><option value="2026-12-16">16 December</option>
+                </select></div>
+                <div><label for="program-room">Room</label><select id="program-room">
+                    <option value="">All rooms</option><option>Room 1</option><option>Room 2</option><option>Room 3</option>
+                </select></div>
+                <button type="reset">Clear filters</button>
+            </form>
+            <p id="program-search-hint" class="participants-note">Search by session code (CTR06, INV01), abstract code (A003, OPT-001), words from a title, or a presenter’s name.</p>
+            <p id="program-result-count" class="participants-note" role="status" aria-live="polite" aria-atomic="true"></p>
+            <ol id="program-results" class="program-results" aria-label="Matching talks"></ol>
+            <p id="program-empty" class="participant-empty" hidden>No talks match your search. Try another code, title or presenter, or clear the filters.</p>
+        </section>
+        <noscript><p class="participants-note">The full program is shown above. Enable JavaScript to use interactive search.</p></noscript>
+    </main>
 
-
-        <h2>14 December 2026</h2>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Time</th>
-                    <th>Program</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>08:00–09:00</td>
-                    <td>Registration</td>
-                </tr>
-
-                <tr>
-                    <td>09:00–09:30</td>
-                    <td>Opening Ceremony</td>
-                </tr>
-
-                <tr>
-                    <td>09:30–10:15</td>
-                    <td>Keynote Lecture 1</td>
-                </tr>
-
-                <tr>
-                    <td>10:15–10:30</td>
-                    <td>Coffee Break</td>
-                </tr>
-
-                <tr>
-                    <td>10:30–12:40</td>
-                    <td>
-                        Invited Talks and Contributed Talks
-                        <br>
-                        <em>Two parallel sessions</em>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>12:40–13:45</td>
-                    <td>Lunch Break</td>
-                </tr>
-
-                <tr>
-                    <td>13:45–14:30</td>
-                    <td>Keynote Lecture 2</td>
-                </tr>
-
-                <tr>
-                    <td>14:30–17:20</td>
-                    <td>
-                        Invited Talks and Contributed Talks
-                        <br>
-                        Coffee Break included
-                        <br>
-                        <em>Two parallel sessions</em>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-
-        <h2>15 December 2026</h2>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Time</th>
-                    <th>Program</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>08:45–09:30</td>
-                    <td>Keynote Lecture 3</td>
-                </tr>
-
-                <tr>
-                    <td>09:30–12:40</td>
-                    <td>
-                        Invited Talks and Contributed Talks
-                        <br>
-                        Coffee Break included
-                        <br>
-                        <em>Two parallel sessions</em>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>12:40–13:45</td>
-                    <td>Lunch Break</td>
-                </tr>
-
-                <tr>
-                    <td>13:45–14:30</td>
-                    <td>Keynote Lecture 4</td>
-                </tr>
-
-                <tr>
-                    <td>14:30–17:20</td>
-                    <td>
-                        Invited Talks and Contributed Talks
-                        <br>
-                        Coffee Break included
-                        <br>
-                        <em>Two parallel sessions</em>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-
-        <h2>16 December 2026</h2>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Time</th>
-                    <th>Program</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>08:45–09:30</td>
-                    <td>Keynote Lecture 5</td>
-                </tr>
-
-                <tr>
-                    <td>09:30–12:00</td>
-                    <td>
-                        Invited Talks and Contributed Talks
-                        <br>
-                        <em>Two parallel sessions</em>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>12:00–12:30</td>
-                    <td>Closing Ceremony</td>
-                </tr>
-            </tbody>
-        </table>
-
-
-        <div class="highlight-box">
-            <p>
-                <strong>Note:</strong>
-                The program is subject to change as appropriate.
-                A detailed schedule including speakers, presentation titles,
-                session chairs, and room assignments will be announced later.
-            </p>
+    <div class="floating-page-links" role="navigation" aria-label="Page shortcuts">
+        <div class="floating-date-links" role="group" aria-label="Conference dates">
+            <a class="floating-page-link" href="#day-14" aria-label="Go to 14 December program">14 Dec</a>
+            <a class="floating-page-link" href="#day-15" aria-label="Go to 15 December program">15 Dec</a>
+            <a class="floating-page-link" href="#day-16" aria-label="Go to 16 December program">16 Dec</a>
         </div>
-
+        <a class="floating-page-link" href="#page-top"><span aria-hidden="true">↑</span> Go to top</a>
     </div>
 
     <footer>
