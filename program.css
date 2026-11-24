@@ -117,7 +117,7 @@
 .program-results > li { border: 1px solid var(--border-color); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow-sm); }
 .program-results > li:hover { border-color: var(--orange-300); }
 .program-filters:not([hidden]) { grid-template-columns: minmax(13rem, 2fr) minmax(8rem, 1fr) minmax(7rem, 1fr) auto; }
-body > footer { padding-bottom: 19rem; }
+body > footer { padding-bottom: 22rem; }
 @media (max-width: 850px) {
     .program-filters:not([hidden]) { grid-template-columns: 1fr 1fr; }
 }
