@@ -105,11 +105,50 @@
 .program-reserve { margin: 0; padding: 1.1rem; overflow-wrap: anywhere; }
 .program-talk + li,
 .program-reserve { border-top: 1px solid var(--border-color); }
-.program-talk h4 { margin: 0.35rem 0; color: var(--heading-color); font-size: 0.98rem; font-weight: 700; line-height: 1.65; }
+.program-talk h4 {
+    margin: 0.35rem 0;
+    color: var(--heading-color);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
 .program-talk p { margin-bottom: 0; }
 .program-talk-meta { color: var(--muted-color); font-size: 0.8rem; line-height: 1.8; }
 .program-talk-meta .participant-category { margin-left: 0.35rem; }
-.program-presenter { font-size: 0.9rem; font-weight: 600; }
+.program-presenter {
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+    font-size: 0.9rem;
+    font-style: italic;
+    font-weight: 600;
+}
+.program-abstract { margin-top: 0.8rem; }
+.program-abstract > summary {
+    display: list-item;
+    width: fit-content;
+    padding: 0.35rem 0;
+    background: transparent;
+    color: var(--accent-text);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.program-abstract > summary:focus-visible { outline: 3px solid var(--orange-400); outline-offset: 3px; }
+.abstract-content {
+    margin-top: 0.65rem;
+    padding: 0.2rem 0 0.2rem 1rem;
+    border-left: 2px solid var(--border-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+.abstract-content p { margin: 0 0 0.9rem; }
+.abstract-content p:last-child { margin-bottom: 0; }
+.abstract-content h5 { margin: 1rem 0 0.5rem; font-size: 1rem; }
+.abstract-keywords { margin-top: 1rem; }
+.abstract-references { padding-left: 1.6rem; font-size: 0.9rem; }
+.abstract-references li { margin-bottom: 0.5rem; }
+.abstract-content mjx-container[display="true"] { max-width: 100%; overflow-x: auto; overflow-y: hidden; padding-block: 0.35rem; }
+.abstract-math-status { color: var(--muted-color); font-size: 0.9rem; }
 .program-context { margin-bottom: 0.4rem !important; color: var(--muted-color); font-size: 0.85rem; }
 .program-talk-list .program-context { display: none; }
 .program-reserve { color: var(--muted-color); font-size: 0.85rem; background: var(--soft-surface); }
